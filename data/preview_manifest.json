@@ -1,0 +1,577 @@
+{
+  "version": "preview-v1",
+  "seed": 20260930,
+  "base_tasks": 80,
+  "complete_pairs": 40,
+  "source_split": "DEVELOPMENT",
+  "task_ids": [
+    "s24-core-candidate-003112",
+    "s24-core-candidate-003111",
+    "s24-core-candidate-003952",
+    "s24-core-candidate-003951",
+    "s24-core-candidate-003220",
+    "s24-core-candidate-003219",
+    "s24-core-candidate-003008",
+    "s24-core-candidate-003007",
+    "s24-core-candidate-003156",
+    "s24-core-candidate-003155",
+    "s24-core-candidate-003910",
+    "s24-core-candidate-003909",
+    "s24-core-candidate-003126",
+    "s24-core-candidate-003125",
+    "s24-core-candidate-003274",
+    "s24-core-candidate-003273",
+    "s24-core-candidate-004746",
+    "s24-core-candidate-004745",
+    "s24-core-candidate-003326",
+    "s24-core-candidate-003325",
+    "s24-core-candidate-006080",
+    "s24-core-candidate-006079",
+    "s24-core-candidate-006096",
+    "s24-core-candidate-006095",
+    "s24-core-candidate-005492",
+    "s24-core-candidate-005491",
+    "s24-core-candidate-006100",
+    "s24-core-candidate-006099",
+    "s24-core-candidate-006000",
+    "s24-core-candidate-005999",
+    "s24-core-candidate-005422",
+    "s24-core-candidate-005421",
+    "s24-core-candidate-005306",
+    "s24-core-candidate-005305",
+    "s24-core-candidate-006186",
+    "s24-core-candidate-006185",
+    "s24-core-candidate-005014",
+    "s24-core-candidate-005013",
+    "s24-core-candidate-004674",
+    "s24-core-candidate-004673",
+    "s24-5-core-candidate-000375",
+    "s24-5-core-candidate-000376",
+    "s24-5-core-candidate-000029",
+    "s24-5-core-candidate-000030",
+    "s24-core-candidate-000779",
+    "s24-core-candidate-000780",
+    "s24-5-core-candidate-000073",
+    "s24-5-core-candidate-000074",
+    "s24-5-core-candidate-000349",
+    "s24-5-core-candidate-000350",
+    "s24-core-candidate-000667",
+    "s24-core-candidate-000668",
+    "s24-5-core-candidate-000491",
+    "s24-5-core-candidate-000492",
+    "s24-5-core-candidate-000463",
+    "s24-5-core-candidate-000464",
+    "s24-core-candidate-002949",
+    "s24-core-candidate-002950",
+    "s24-5-core-candidate-000411",
+    "s24-5-core-candidate-000412",
+    "s24-core-candidate-000583",
+    "s24-core-candidate-000584",
+    "s24-5-core-candidate-000115",
+    "s24-5-core-candidate-000116",
+    "s24-core-candidate-002967",
+    "s24-core-candidate-002968",
+    "s24-core-candidate-000173",
+    "s24-core-candidate-000174",
+    "s24-5-core-candidate-000125",
+    "s24-5-core-candidate-000126",
+    "s24-5-core-candidate-000181",
+    "s24-5-core-candidate-000182",
+    "s24-5-core-candidate-000045",
+    "s24-5-core-candidate-000046",
+    "s24-5-core-candidate-000231",
+    "s24-5-core-candidate-000232",
+    "s24-5-core-candidate-000255",
+    "s24-5-core-candidate-000256",
+    "s24-5-core-candidate-000189",
+    "s24-5-core-candidate-000190"
+  ],
+  "strata": [
+    {
+      "stratum": [
+        "evidence",
+        "A",
+        "long"
+      ],
+      "pair_id": "s24-a-broad01-spoken_brand-01::long",
+      "task_ids": [
+        "s24-core-candidate-003112",
+        "s24-core-candidate-003111"
+      ]
+    },
+    {
+      "stratum": [
+        "evidence",
+        "A",
+        "long"
+      ],
+      "pair_id": "s24-a-rp-reuse-065::long",
+      "task_ids": [
+        "s24-core-candidate-003952",
+        "s24-core-candidate-003951"
+      ]
+    },
+    {
+      "stratum": [
+        "evidence",
+        "A",
+        "long"
+      ],
+      "pair_id": "s24-a-fresh01-spoken_material-009::long",
+      "task_ids": [
+        "s24-core-candidate-003220",
+        "s24-core-candidate-003219"
+      ]
+    },
+    {
+      "stratum": [
+        "evidence",
+        "A",
+        "long"
+      ],
+      "pair_id": "s24-a-broad01-speaker_first_name-02::long",
+      "task_ids": [
+        "s24-core-candidate-003008",
+        "s24-core-candidate-003007"
+      ]
+    },
+    {
+      "stratum": [
+        "evidence",
+        "A",
+        "long"
+      ],
+      "pair_id": "s24-a-fresh01-spoken_color-005-speechq::long",
+      "task_ids": [
+        "s24-core-candidate-003156",
+        "s24-core-candidate-003155"
+      ]
+    },
+    {
+      "stratum": [
+        "evidence",
+        "A",
+        "short"
+      ],
+      "pair_id": "s24-a-rp-reuse-054::short",
+      "task_ids": [
+        "s24-core-candidate-003910",
+        "s24-core-candidate-003909"
+      ]
+    },
+    {
+      "stratum": [
+        "evidence",
+        "A",
+        "short"
+      ],
+      "pair_id": "s24-a-broad01-spoken_city-01::short",
+      "task_ids": [
+        "s24-core-candidate-003126",
+        "s24-core-candidate-003125"
+      ]
+    },
+    {
+      "stratum": [
+        "evidence",
+        "A",
+        "short"
+      ],
+      "pair_id": "s24-a-fresh01-spoken_weekday-002::short",
+      "task_ids": [
+        "s24-core-candidate-003274",
+        "s24-core-candidate-003273"
+      ]
+    },
+    {
+      "stratum": [
+        "evidence",
+        "A",
+        "short"
+      ],
+      "pair_id": "s24-a-032::short",
+      "task_ids": [
+        "s24-core-candidate-004746",
+        "s24-core-candidate-004745"
+      ]
+    },
+    {
+      "stratum": [
+        "evidence",
+        "A",
+        "short"
+      ],
+      "pair_id": "s24-a-fresh01-self_first_name-003::short",
+      "task_ids": [
+        "s24-core-candidate-003326",
+        "s24-core-candidate-003325"
+      ]
+    },
+    {
+      "stratum": [
+        "evidence",
+        "V",
+        "long"
+      ],
+      "pair_id": "s24-v-old-select-15::long",
+      "task_ids": [
+        "s24-core-candidate-006080",
+        "s24-core-candidate-006079"
+      ]
+    },
+    {
+      "stratum": [
+        "evidence",
+        "V",
+        "long"
+      ],
+      "pair_id": "s24-v-st02-03::long",
+      "task_ids": [
+        "s24-core-candidate-006096",
+        "s24-core-candidate-006095"
+      ]
+    },
+    {
+      "stratum": [
+        "evidence",
+        "V",
+        "long"
+      ],
+      "pair_id": "s24-fresh03-rr-035::long",
+      "task_ids": [
+        "s24-core-candidate-005492",
+        "s24-core-candidate-005491"
+      ]
+    },
+    {
+      "stratum": [
+        "evidence",
+        "V",
+        "long"
+      ],
+      "pair_id": "s24-v-st02-05::long",
+      "task_ids": [
+        "s24-core-candidate-006100",
+        "s24-core-candidate-006099"
+      ]
+    },
+    {
+      "stratum": [
+        "evidence",
+        "V",
+        "long"
+      ],
+      "pair_id": "s24-v-noncolor01-headwear_type_repaired-01::long",
+      "task_ids": [
+        "s24-core-candidate-006000",
+        "s24-core-candidate-005999"
+      ]
+    },
+    {
+      "stratum": [
+        "evidence",
+        "V",
+        "short"
+      ],
+      "pair_id": "s24-fresh03-rr-018::short",
+      "task_ids": [
+        "s24-core-candidate-005422",
+        "s24-core-candidate-005421"
+      ]
+    },
+    {
+      "stratum": [
+        "evidence",
+        "V",
+        "short"
+      ],
+      "pair_id": "s24-fresh02-expanded-rr-044::short",
+      "task_ids": [
+        "s24-core-candidate-005306",
+        "s24-core-candidate-005305"
+      ]
+    },
+    {
+      "stratum": [
+        "evidence",
+        "V",
+        "short"
+      ],
+      "pair_id": "s24-v-supply-24::short",
+      "task_ids": [
+        "s24-core-candidate-006186",
+        "s24-core-candidate-006185"
+      ]
+    },
+    {
+      "stratum": [
+        "evidence",
+        "V",
+        "short"
+      ],
+      "pair_id": "s24-v-confirm-08::short",
+      "task_ids": [
+        "s24-core-candidate-005014",
+        "s24-core-candidate-005013"
+      ]
+    },
+    {
+      "stratum": [
+        "evidence",
+        "V",
+        "short"
+      ],
+      "pair_id": "s24-v-old-object-03::short",
+      "task_ids": [
+        "s24-core-candidate-004674",
+        "s24-core-candidate-004673"
+      ]
+    },
+    {
+      "stratum": [
+        "task",
+        "A",
+        "long"
+      ],
+      "pair_id": "s24-5-rp-rr-170",
+      "task_ids": [
+        "s24-5-core-candidate-000375",
+        "s24-5-core-candidate-000376"
+      ]
+    },
+    {
+      "stratum": [
+        "task",
+        "A",
+        "long"
+      ],
+      "pair_id": "s24-5-rp-donor01-017",
+      "task_ids": [
+        "s24-5-core-candidate-000029",
+        "s24-5-core-candidate-000030"
+      ]
+    },
+    {
+      "stratum": [
+        "task",
+        "A",
+        "long"
+      ],
+      "pair_id": "s24-rp-reuse-00031",
+      "task_ids": [
+        "s24-core-candidate-000779",
+        "s24-core-candidate-000780"
+      ]
+    },
+    {
+      "stratum": [
+        "task",
+        "A",
+        "long"
+      ],
+      "pair_id": "s24-5-rp-rr-019",
+      "task_ids": [
+        "s24-5-core-candidate-000073",
+        "s24-5-core-candidate-000074"
+      ]
+    },
+    {
+      "stratum": [
+        "task",
+        "A",
+        "long"
+      ],
+      "pair_id": "s24-5-rp-rr-157",
+      "task_ids": [
+        "s24-5-core-candidate-000349",
+        "s24-5-core-candidate-000350"
+      ]
+    },
+    {
+      "stratum": [
+        "task",
+        "A",
+        "short"
+      ],
+      "pair_id": "s24-rp-reuse-00582",
+      "task_ids": [
+        "s24-core-candidate-000667",
+        "s24-core-candidate-000668"
+      ]
+    },
+    {
+      "stratum": [
+        "task",
+        "A",
+        "short"
+      ],
+      "pair_id": "s24-5-rp-rr-228",
+      "task_ids": [
+        "s24-5-core-candidate-000491",
+        "s24-5-core-candidate-000492"
+      ]
+    },
+    {
+      "stratum": [
+        "task",
+        "A",
+        "short"
+      ],
+      "pair_id": "s24-5-rp-rr-214",
+      "task_ids": [
+        "s24-5-core-candidate-000463",
+        "s24-5-core-candidate-000464"
+      ]
+    },
+    {
+      "stratum": [
+        "task",
+        "A",
+        "short"
+      ],
+      "pair_id": "s24-rp-donor12-00079",
+      "task_ids": [
+        "s24-core-candidate-002949",
+        "s24-core-candidate-002950"
+      ]
+    },
+    {
+      "stratum": [
+        "task",
+        "A",
+        "short"
+      ],
+      "pair_id": "s24-5-rp-rr-188",
+      "task_ids": [
+        "s24-5-core-candidate-000411",
+        "s24-5-core-candidate-000412"
+      ]
+    },
+    {
+      "stratum": [
+        "task",
+        "V",
+        "long"
+      ],
+      "pair_id": "s24-rp-reuse-00646",
+      "task_ids": [
+        "s24-core-candidate-000583",
+        "s24-core-candidate-000584"
+      ]
+    },
+    {
+      "stratum": [
+        "task",
+        "V",
+        "long"
+      ],
+      "pair_id": "s24-5-rp-rr-040",
+      "task_ids": [
+        "s24-5-core-candidate-000115",
+        "s24-5-core-candidate-000116"
+      ]
+    },
+    {
+      "stratum": [
+        "task",
+        "V",
+        "long"
+      ],
+      "pair_id": "s24-rp-donor13-00003",
+      "task_ids": [
+        "s24-core-candidate-002967",
+        "s24-core-candidate-002968"
+      ]
+    },
+    {
+      "stratum": [
+        "task",
+        "V",
+        "long"
+      ],
+      "pair_id": "s24-rp-fill-00434",
+      "task_ids": [
+        "s24-core-candidate-000173",
+        "s24-core-candidate-000174"
+      ]
+    },
+    {
+      "stratum": [
+        "task",
+        "V",
+        "long"
+      ],
+      "pair_id": "s24-5-rp-rr-045",
+      "task_ids": [
+        "s24-5-core-candidate-000125",
+        "s24-5-core-candidate-000126"
+      ]
+    },
+    {
+      "stratum": [
+        "task",
+        "V",
+        "short"
+      ],
+      "pair_id": "s24-5-rp-rr-073",
+      "task_ids": [
+        "s24-5-core-candidate-000181",
+        "s24-5-core-candidate-000182"
+      ]
+    },
+    {
+      "stratum": [
+        "task",
+        "V",
+        "short"
+      ],
+      "pair_id": "s24-5-rp-rr-005",
+      "task_ids": [
+        "s24-5-core-candidate-000045",
+        "s24-5-core-candidate-000046"
+      ]
+    },
+    {
+      "stratum": [
+        "task",
+        "V",
+        "short"
+      ],
+      "pair_id": "s24-5-rp-rr-098",
+      "task_ids": [
+        "s24-5-core-candidate-000231",
+        "s24-5-core-candidate-000232"
+      ]
+    },
+    {
+      "stratum": [
+        "task",
+        "V",
+        "short"
+      ],
+      "pair_id": "s24-5-rp-rr-110",
+      "task_ids": [
+        "s24-5-core-candidate-000255",
+        "s24-5-core-candidate-000256"
+      ]
+    },
+    {
+      "stratum": [
+        "task",
+        "V",
+        "short"
+      ],
+      "pair_id": "s24-5-rp-rr-077",
+      "task_ids": [
+        "s24-5-core-candidate-000189",
+        "s24-5-core-candidate-000190"
+      ]
+    }
+  ],
+  "selection_method": "Seeded shuffle within each side×modality×horizon stratum; choose five pairs using minimum prior target-parent count then prior side/modality/family count, with seeded order as tie-break. No predictions read.",
+  "media_count": 127,
+  "inputs": "data/tasks/inputs.jsonl",
+  "answers": "data/tasks/answers.jsonl",
+  "tasks": "data/tasks/tasks.jsonl",
+  "media_manifest": "data/media_manifest.json"
+}

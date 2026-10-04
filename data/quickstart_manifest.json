@@ -1,0 +1,16 @@
+{
+  "task_ids": [
+    "s24-5-core-candidate-000045",
+    "s24-5-core-candidate-000046",
+    "s24-core-candidate-000667",
+    "s24-core-candidate-000668",
+    "s24-core-candidate-005422",
+    "s24-core-candidate-005421",
+    "s24-core-candidate-003910",
+    "s24-core-candidate-003909"
+  ],
+  "base_tasks": 8,
+  "complete_pairs": 4,
+  "coverage": "Both sides and V/A; Short only; all required media bundled",
+  "selection_method": "First selected complete Short pair in each side/modality stratum whose entire native dependency closure uses bundled FineVideo media. Based only on source rights, not model outputs."
+}

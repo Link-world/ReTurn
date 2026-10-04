@@ -1,0 +1,17 @@
+{
+  "kind": "local",
+  "model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+  "modalities": [
+    "V",
+    "A"
+  ],
+  "env_prefix": "LOCAL_OMNI",
+  "max_tokens": 128,
+  "retry_tokens": 1024,
+  "seed": 2020,
+  "backend": "qwen3_omni",
+  "temperature": 0,
+  "fps": 2,
+  "video_max_side": 768,
+  "protocol_version": "preview-v1"
+}

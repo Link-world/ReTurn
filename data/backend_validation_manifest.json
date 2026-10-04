@@ -1,0 +1,13 @@
+{
+  "task_ids": [
+    "s24-5-core-candidate-000181",
+    "s24-5-core-candidate-000182",
+    "s24-core-candidate-000667",
+    "s24-core-candidate-000668",
+    "s24-core-candidate-006080",
+    "s24-core-candidate-006079",
+    "s24-core-candidate-003112",
+    "s24-core-candidate-003111"
+  ],
+  "purpose": "Fixed pre-output E2E validation: complete pairs across V/A and Short/Long; both interfaces."
+}

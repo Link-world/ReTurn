@@ -1,0 +1,16 @@
+{
+  "kind": "api",
+  "model": "stepaudio-3-chat-preview",
+  "modalities": [
+    "A"
+  ],
+  "env_prefix": "AUDIO",
+  "max_tokens": 1024,
+  "retry_tokens": 16384,
+  "attempts": 4,
+  "backend": "stepaudio_api",
+  "temperature": 0,
+  "fps": 2,
+  "video_max_side": 768,
+  "protocol_version": "preview-v1"
+}

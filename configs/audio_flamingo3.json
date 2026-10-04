@@ -1,0 +1,16 @@
+{
+  "kind": "local",
+  "model": "nvidia/audio-flamingo-3-hf",
+  "modalities": [
+    "A"
+  ],
+  "env_prefix": "LOCAL_AUDIO",
+  "max_tokens": 256,
+  "retry_tokens": 1024,
+  "seed": 20260921,
+  "backend": "audio_flamingo3",
+  "temperature": 0,
+  "fps": 2,
+  "video_max_side": 768,
+  "protocol_version": "preview-v1"
+}

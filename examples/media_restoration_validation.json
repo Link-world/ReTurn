@@ -1,0 +1,339 @@
+{
+  "scope": "15 LLaVA clips (optional restoration check) restored from the exact extracted upstream member paths on the validation host; no external archives downloaded in this test.",
+  "clips": 15,
+  "equal_video_geometry": 15,
+  "equal_decoded_video": 15,
+  "equal_decoded_audio": 15,
+  "records": [
+    {
+      "media_id": "clip-0017",
+      "video_geometry_equal": true,
+      "decoded_video_equal": true,
+      "decoded_audio_equal": true,
+      "original_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "4/1",
+        "nb_frames": "34"
+      },
+      "restored_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "4/1",
+        "nb_frames": "34"
+      },
+      "original_audio_samples": 138577,
+      "restored_audio_samples": 138577,
+      "mean_pixel_absolute_difference": 0.0,
+      "max_audio_absolute_difference": 0
+    },
+    {
+      "media_id": "clip-0021",
+      "video_geometry_equal": true,
+      "decoded_video_equal": true,
+      "decoded_audio_equal": true,
+      "original_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "4/1",
+        "nb_frames": "40"
+      },
+      "restored_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "4/1",
+        "nb_frames": "40"
+      },
+      "original_audio_samples": 160000,
+      "restored_audio_samples": 160000,
+      "mean_pixel_absolute_difference": 0.0,
+      "max_audio_absolute_difference": 0
+    },
+    {
+      "media_id": "clip-0024",
+      "video_geometry_equal": true,
+      "decoded_video_equal": true,
+      "decoded_audio_equal": true,
+      "original_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "4/1",
+        "nb_frames": "40"
+      },
+      "restored_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "4/1",
+        "nb_frames": "40"
+      },
+      "original_audio_samples": 160000,
+      "restored_audio_samples": 160000,
+      "mean_pixel_absolute_difference": 0.0,
+      "max_audio_absolute_difference": 0
+    },
+    {
+      "media_id": "clip-0028",
+      "video_geometry_equal": true,
+      "decoded_video_equal": true,
+      "decoded_audio_equal": true,
+      "original_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "30000/1001",
+        "nb_frames": "120"
+      },
+      "restored_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "30000/1001",
+        "nb_frames": "120"
+      },
+      "original_audio_samples": 64064,
+      "restored_audio_samples": 64064,
+      "mean_pixel_absolute_difference": 0.0,
+      "max_audio_absolute_difference": 0
+    },
+    {
+      "media_id": "clip-0029",
+      "video_geometry_equal": true,
+      "decoded_video_equal": true,
+      "decoded_audio_equal": true,
+      "original_video": {
+        "width": 540,
+        "height": 960,
+        "r_frame_rate": "30/1",
+        "nb_frames": "120"
+      },
+      "restored_video": {
+        "width": 540,
+        "height": 960,
+        "r_frame_rate": "30/1",
+        "nb_frames": "120"
+      },
+      "original_audio_samples": 64000,
+      "restored_audio_samples": 64000,
+      "mean_pixel_absolute_difference": 0.0,
+      "max_audio_absolute_difference": 0
+    },
+    {
+      "media_id": "clip-0063",
+      "video_geometry_equal": true,
+      "decoded_video_equal": true,
+      "decoded_audio_equal": true,
+      "original_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "25/1",
+        "nb_frames": "100"
+      },
+      "restored_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "25/1",
+        "nb_frames": "100"
+      },
+      "original_audio_samples": 64000,
+      "restored_audio_samples": 64000,
+      "mean_pixel_absolute_difference": 0.0,
+      "max_audio_absolute_difference": 0
+    },
+    {
+      "media_id": "clip-0064",
+      "video_geometry_equal": true,
+      "decoded_video_equal": true,
+      "decoded_audio_equal": true,
+      "original_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "30000/1001",
+        "nb_frames": "120"
+      },
+      "restored_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "30000/1001",
+        "nb_frames": "120"
+      },
+      "original_audio_samples": 64064,
+      "restored_audio_samples": 64064,
+      "mean_pixel_absolute_difference": 0.0,
+      "max_audio_absolute_difference": 0
+    },
+    {
+      "media_id": "clip-0065",
+      "video_geometry_equal": true,
+      "decoded_video_equal": true,
+      "decoded_audio_equal": true,
+      "original_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "24000/1001",
+        "nb_frames": "96"
+      },
+      "restored_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "24000/1001",
+        "nb_frames": "96"
+      },
+      "original_audio_samples": 64064,
+      "restored_audio_samples": 64064,
+      "mean_pixel_absolute_difference": 0.0,
+      "max_audio_absolute_difference": 0
+    },
+    {
+      "media_id": "clip-0066",
+      "video_geometry_equal": true,
+      "decoded_video_equal": true,
+      "decoded_audio_equal": true,
+      "original_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "30000/1001",
+        "nb_frames": "120"
+      },
+      "restored_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "30000/1001",
+        "nb_frames": "120"
+      },
+      "original_audio_samples": 64064,
+      "restored_audio_samples": 64064,
+      "mean_pixel_absolute_difference": 0.0,
+      "max_audio_absolute_difference": 0
+    },
+    {
+      "media_id": "clip-0067",
+      "video_geometry_equal": true,
+      "decoded_video_equal": true,
+      "decoded_audio_equal": true,
+      "original_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "25/1",
+        "nb_frames": "100"
+      },
+      "restored_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "25/1",
+        "nb_frames": "100"
+      },
+      "original_audio_samples": 64000,
+      "restored_audio_samples": 64000,
+      "mean_pixel_absolute_difference": 0.0,
+      "max_audio_absolute_difference": 0
+    },
+    {
+      "media_id": "clip-0068",
+      "video_geometry_equal": true,
+      "decoded_video_equal": true,
+      "decoded_audio_equal": true,
+      "original_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "24/1",
+        "nb_frames": "96"
+      },
+      "restored_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "24/1",
+        "nb_frames": "96"
+      },
+      "original_audio_samples": 64000,
+      "restored_audio_samples": 64000,
+      "mean_pixel_absolute_difference": 0.0,
+      "max_audio_absolute_difference": 0
+    },
+    {
+      "media_id": "clip-0074",
+      "video_geometry_equal": true,
+      "decoded_video_equal": true,
+      "decoded_audio_equal": true,
+      "original_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "24000/1001",
+        "nb_frames": "144"
+      },
+      "restored_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "24000/1001",
+        "nb_frames": "144"
+      },
+      "original_audio_samples": 95560,
+      "restored_audio_samples": 95560,
+      "mean_pixel_absolute_difference": 0.0,
+      "max_audio_absolute_difference": 0
+    },
+    {
+      "media_id": "clip-0090",
+      "video_geometry_equal": true,
+      "decoded_video_equal": true,
+      "decoded_audio_equal": true,
+      "original_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "4/1",
+        "nb_frames": "40"
+      },
+      "restored_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "4/1",
+        "nb_frames": "40"
+      },
+      "original_audio_samples": 160000,
+      "restored_audio_samples": 160000,
+      "mean_pixel_absolute_difference": 0.0,
+      "max_audio_absolute_difference": 0
+    },
+    {
+      "media_id": "clip-0097",
+      "video_geometry_equal": true,
+      "decoded_video_equal": true,
+      "decoded_audio_equal": true,
+      "original_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "30000/1001",
+        "nb_frames": "150"
+      },
+      "restored_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "30000/1001",
+        "nb_frames": "150"
+      },
+      "original_audio_samples": 80000,
+      "restored_audio_samples": 80000,
+      "mean_pixel_absolute_difference": 0.0,
+      "max_audio_absolute_difference": 0
+    },
+    {
+      "media_id": "clip-0125",
+      "video_geometry_equal": true,
+      "decoded_video_equal": true,
+      "decoded_audio_equal": true,
+      "original_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "24000/1001",
+        "nb_frames": "96"
+      },
+      "restored_video": {
+        "width": 640,
+        "height": 360,
+        "r_frame_rate": "24000/1001",
+        "nb_frames": "96"
+      },
+      "original_audio_samples": 64064,
+      "restored_audio_samples": 64064,
+      "mean_pixel_absolute_difference": 0.0,
+      "max_audio_absolute_difference": 0
+    }
+  ]
+}

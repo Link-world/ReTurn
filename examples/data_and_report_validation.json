@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "frozen_tasks_equal": 80,
+  "frozen_input_contracts_equal_except_portable_media_paths": 490,
+  "frozen_answer_contracts_equal": 240,
+  "current_TEST_tasks": 0,
+  "historical_logical_views_compared": 32,
+  "historical_report_groups_compared": 104,
+  "score_and_denominator_mismatches": 0
+}

@@ -1,0 +1,1197 @@
+{
+  "config": {
+    "kind": "api",
+    "model": "stepaudio-3-chat-preview",
+    "modalities": [
+      "A"
+    ],
+    "env_prefix": "AUDIO",
+    "max_tokens": 1024,
+    "retry_tokens": 16384,
+    "attempts": 4,
+    "backend": "stepaudio_api",
+    "temperature": 0,
+    "fps": 2,
+    "video_max_side": 768,
+    "protocol_version": "preview-v1"
+  },
+  "endpoint": null,
+  "model_location": null,
+  "inputs": [
+    {
+      "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE0",
+      "interface": "openqa",
+      "condition": "AUX",
+      "operation": "history",
+      "horizon": "long",
+      "required_modality": "A",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0012.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0012.mp4"
+            },
+            {
+              "type": "text",
+              "text": "Which game is the video about?\nAnswer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE1",
+      "interface": "openqa",
+      "condition": "AUX",
+      "operation": "history",
+      "horizon": "long",
+      "required_modality": "A",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0012.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0012.mp4"
+            },
+            {
+              "type": "text",
+              "text": "Which game is the video about?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE0"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0048.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0048.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What bicycle model does the speaker name?\nAnswer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE2",
+      "interface": "openqa",
+      "condition": "AUX",
+      "operation": "history",
+      "horizon": "long",
+      "required_modality": "A",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0012.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0012.mp4"
+            },
+            {
+              "type": "text",
+              "text": "Which game is the video about?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE0"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0048.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0048.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What bicycle model does the speaker name?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE1"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0049.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0049.mp4"
+            },
+            {
+              "type": "text",
+              "text": "How does the speaker greet the audience?\nAnswer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE3",
+      "interface": "openqa",
+      "condition": "AUX",
+      "operation": "history",
+      "horizon": "long",
+      "required_modality": "A",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0012.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0012.mp4"
+            },
+            {
+              "type": "text",
+              "text": "Which game is the video about?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE0"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0048.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0048.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What bicycle model does the speaker name?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE1"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0049.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0049.mp4"
+            },
+            {
+              "type": "text",
+              "text": "How does the speaker greet the audience?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE2"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0050.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0050.mp4"
+            },
+            {
+              "type": "text",
+              "text": "How many people speak in the clip?\nAnswer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-rp-reuse-00582::C::mcq",
+      "interface": "mcq",
+      "condition": "C",
+      "operation": "paired_control",
+      "horizon": "short",
+      "required_modality": "A",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0081.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0081.mp4"
+            },
+            {
+              "type": "text",
+              "text": "Which ingredient is explicitly mentioned in this clip?\nOptions:\nA. salt\nB. flour\nC. garlic\nD. butter\nAnswer with only the option letter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-rp-reuse-00582::C::openqa",
+      "interface": "openqa",
+      "condition": "C",
+      "operation": "paired_control",
+      "horizon": "short",
+      "required_modality": "A",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0081.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0081.mp4"
+            },
+            {
+              "type": "text",
+              "text": "Which ingredient is explicitly mentioned in this clip?\nAnswer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-rp-reuse-00582::preserve::mcq::H0",
+      "interface": "mcq",
+      "condition": "H0",
+      "operation": "preserve",
+      "horizon": "short",
+      "required_modality": "A",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0082.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0082.mp4"
+            },
+            {
+              "type": "text",
+              "text": "Which ingredient is explicitly mentioned in this clip?\nOptions:\nA. salt\nB. flour\nC. garlic\nD. butter\nAnswer with only the option letter."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-rp-reuse-00582::preserve::mcq::OLD"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0081.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0081.mp4"
+            },
+            {
+              "type": "text",
+              "text": "For this new clip, answer the first question again using the options from that first question. Answer with only the option letter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-rp-reuse-00582::preserve::mcq::OLD",
+      "interface": "mcq",
+      "condition": "AUX",
+      "operation": "preserve",
+      "horizon": "short",
+      "required_modality": "A",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0082.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0082.mp4"
+            },
+            {
+              "type": "text",
+              "text": "Which ingredient is explicitly mentioned in this clip?\nOptions:\nA. salt\nB. flour\nC. garlic\nD. butter\nAnswer with only the option letter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-rp-reuse-00582::preserve::openqa::H0",
+      "interface": "openqa",
+      "condition": "H0",
+      "operation": "preserve",
+      "horizon": "short",
+      "required_modality": "A",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0082.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0082.mp4"
+            },
+            {
+              "type": "text",
+              "text": "Which ingredient is explicitly mentioned in this clip?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-rp-reuse-00582::preserve::openqa::OLD"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0081.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0081.mp4"
+            },
+            {
+              "type": "text",
+              "text": "For this new clip, answer the first question again. Answer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-rp-reuse-00582::preserve::openqa::OLD",
+      "interface": "openqa",
+      "condition": "AUX",
+      "operation": "preserve",
+      "horizon": "short",
+      "required_modality": "A",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0082.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0082.mp4"
+            },
+            {
+              "type": "text",
+              "text": "Which ingredient is explicitly mentioned in this clip?\nAnswer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-rp-reuse-00582::revise::mcq::H0",
+      "interface": "mcq",
+      "condition": "H0",
+      "operation": "revise",
+      "horizon": "short",
+      "required_modality": "A",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0083.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0083.mp4"
+            },
+            {
+              "type": "text",
+              "text": "Which ingredient is explicitly mentioned in this clip?\nOptions:\nA. salt\nB. flour\nC. garlic\nD. butter\nAnswer with only the option letter."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-rp-reuse-00582::revise::mcq::OLD"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0081.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0081.mp4"
+            },
+            {
+              "type": "text",
+              "text": "For this new clip, answer the first question again using the options from that first question. Answer with only the option letter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-rp-reuse-00582::revise::mcq::OLD",
+      "interface": "mcq",
+      "condition": "AUX",
+      "operation": "revise",
+      "horizon": "short",
+      "required_modality": "A",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0083.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0083.mp4"
+            },
+            {
+              "type": "text",
+              "text": "Which ingredient is explicitly mentioned in this clip?\nOptions:\nA. salt\nB. flour\nC. garlic\nD. butter\nAnswer with only the option letter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-rp-reuse-00582::revise::openqa::H0",
+      "interface": "openqa",
+      "condition": "H0",
+      "operation": "revise",
+      "horizon": "short",
+      "required_modality": "A",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0083.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0083.mp4"
+            },
+            {
+              "type": "text",
+              "text": "Which ingredient is explicitly mentioned in this clip?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-rp-reuse-00582::revise::openqa::OLD"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0081.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0081.mp4"
+            },
+            {
+              "type": "text",
+              "text": "For this new clip, answer the first question again. Answer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-rp-reuse-00582::revise::openqa::OLD",
+      "interface": "openqa",
+      "condition": "AUX",
+      "operation": "revise",
+      "horizon": "short",
+      "required_modality": "A",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0083.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0083.mp4"
+            },
+            {
+              "type": "text",
+              "text": "Which ingredient is explicitly mentioned in this clip?\nAnswer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s26-wording-revision::s24-a-broad01-spoken_brand-01::C::mcq",
+      "interface": "mcq",
+      "condition": "C",
+      "operation": "paired_control",
+      "horizon": "shared",
+      "required_modality": "A",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0049.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0049.mp4"
+            },
+            {
+              "type": "text",
+              "text": "Which brand name is explicitly spoken?\nA. Gillette\nB. IT Cosmetics\nC. Ruger\nD. Portmeirion\nAnswer with only the option letter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s26-wording-revision::s24-a-broad01-spoken_brand-01::C::openqa",
+      "interface": "openqa",
+      "condition": "C",
+      "operation": "paired_control",
+      "horizon": "shared",
+      "required_modality": "A",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0049.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0049.mp4"
+            },
+            {
+              "type": "text",
+              "text": "Which brand name is explicitly spoken?\nAnswer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s26-wording-revision::s24-a-broad01-spoken_brand-01::long::rebind::mcq",
+      "interface": "mcq",
+      "condition": "H0",
+      "operation": "rebind",
+      "horizon": "long",
+      "required_modality": "A",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0012.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0012.mp4"
+            },
+            {
+              "type": "text",
+              "text": "Which game is the video about?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE0"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0048.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0048.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What bicycle model does the speaker name?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE1"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0049.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0049.mp4"
+            },
+            {
+              "type": "text",
+              "text": "How does the speaker greet the audience?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE2"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0050.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0050.mp4"
+            },
+            {
+              "type": "text",
+              "text": "How many people speak in the clip?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE3"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0104.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0104.mp4"
+            },
+            {
+              "type": "text",
+              "text": "For the third clip I shared, answer the following question.\nWhich brand name is explicitly spoken?\nA. Gillette\nB. IT Cosmetics\nC. Ruger\nD. Portmeirion\nAnswer with only the option letter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s26-wording-revision::s24-a-broad01-spoken_brand-01::long::rebind::openqa",
+      "interface": "openqa",
+      "condition": "H0",
+      "operation": "rebind",
+      "horizon": "long",
+      "required_modality": "A",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0012.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0012.mp4"
+            },
+            {
+              "type": "text",
+              "text": "Which game is the video about?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE0"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0048.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0048.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What bicycle model does the speaker name?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE1"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0049.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0049.mp4"
+            },
+            {
+              "type": "text",
+              "text": "How does the speaker greet the audience?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE2"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0050.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0050.mp4"
+            },
+            {
+              "type": "text",
+              "text": "How many people speak in the clip?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE3"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0104.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0104.mp4"
+            },
+            {
+              "type": "text",
+              "text": "For the third clip I shared, answer the following question.\nWhich brand name is explicitly spoken?\nAnswer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s26-wording-revision::s24-a-broad01-spoken_brand-01::long::retrieve::mcq",
+      "interface": "mcq",
+      "condition": "H0",
+      "operation": "retrieve",
+      "horizon": "long",
+      "required_modality": "A",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0012.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0012.mp4"
+            },
+            {
+              "type": "text",
+              "text": "Which game is the video about?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE0"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0048.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0048.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What bicycle model does the speaker name?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE1"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0049.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0049.mp4"
+            },
+            {
+              "type": "text",
+              "text": "How does the speaker greet the audience?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE2"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0050.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0050.mp4"
+            },
+            {
+              "type": "text",
+              "text": "How many people speak in the clip?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE3"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0105.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0105.mp4"
+            },
+            {
+              "type": "text",
+              "text": "For the third clip I shared, answer the following question.\nWhich brand name is explicitly spoken?\nA. Gillette\nB. IT Cosmetics\nC. Ruger\nD. Portmeirion\nAnswer with only the option letter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s26-wording-revision::s24-a-broad01-spoken_brand-01::long::retrieve::openqa",
+      "interface": "openqa",
+      "condition": "H0",
+      "operation": "retrieve",
+      "horizon": "long",
+      "required_modality": "A",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0012.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0012.mp4"
+            },
+            {
+              "type": "text",
+              "text": "Which game is the video about?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE0"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0048.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0048.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What bicycle model does the speaker name?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE1"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0049.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0049.mp4"
+            },
+            {
+              "type": "text",
+              "text": "How does the speaker greet the audience?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE2"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0050.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0050.mp4"
+            },
+            {
+              "type": "text",
+              "text": "How many people speak in the clip?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-a-broad01-spoken_brand-01::long::NATIVE3"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0105.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0105.mp4"
+            },
+            {
+              "type": "text",
+              "text": "For the third clip I shared, answer the following question.\nWhich brand name is explicitly spoken?\nAnswer briefly."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "task_ids": [
+    "s24-core-candidate-003112",
+    "s24-core-candidate-003111",
+    "s24-core-candidate-000667",
+    "s24-core-candidate-000668"
+  ],
+  "interfaces": [
+    "openqa",
+    "mcq"
+  ],
+  "provenance": "Historical formal cache replay; not a current API run. Dates are unknown unless present in original row."
+}

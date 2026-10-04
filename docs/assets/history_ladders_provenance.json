@@ -1,0 +1,474 @@
+{
+  "source": "return_section4_final/data.json: condition_source; same complete-pair results as paper Figure 3a",
+  "aggregation": "Within each model, pool Short and Long on complete valid operation pairs. Single-turn averages the two direct counterparts. Average the 13 model configurations equally, separately for each role and answer interface. Model families cover their supported evidence subsets.",
+  "model_level_results": [
+    {
+      "role": "task",
+      "model": "audio_flamingo3_hf",
+      "interface": "mcq",
+      "n": 626,
+      "single": 99.68051118210863,
+      "reference": 99.36102236421725,
+      "conflict": 5.5910543130990416
+    },
+    {
+      "role": "task",
+      "model": "audio_flamingo3_hf",
+      "interface": "openqa",
+      "n": 626,
+      "single": 97.76357827476038,
+      "reference": 79.87220447284345,
+      "conflict": 46.48562300319489
+    },
+    {
+      "role": "task",
+      "model": "doubao_2_0_lite",
+      "interface": "mcq",
+      "n": 1250,
+      "single": 99.28,
+      "reference": 90.48,
+      "conflict": 67.2
+    },
+    {
+      "role": "task",
+      "model": "doubao_2_0_lite",
+      "interface": "openqa",
+      "n": 1250,
+      "single": 97.6,
+      "reference": 89.12,
+      "conflict": 85.52
+    },
+    {
+      "role": "task",
+      "model": "internvl35",
+      "interface": "mcq",
+      "n": 624,
+      "single": 94.39102564102564,
+      "reference": 93.10897435897436,
+      "conflict": 12.01923076923077
+    },
+    {
+      "role": "task",
+      "model": "internvl35",
+      "interface": "openqa",
+      "n": 624,
+      "single": 80.92948717948718,
+      "reference": 25.80128205128205,
+      "conflict": 18.75
+    },
+    {
+      "role": "task",
+      "model": "mimo",
+      "interface": "mcq",
+      "n": 1250,
+      "single": 97.52,
+      "reference": 80.32,
+      "conflict": 39.36
+    },
+    {
+      "role": "task",
+      "model": "mimo",
+      "interface": "openqa",
+      "n": 1250,
+      "single": 93.2,
+      "reference": 74.88,
+      "conflict": 64.0
+    },
+    {
+      "role": "task",
+      "model": "mimo_audio7b",
+      "interface": "mcq",
+      "n": 626,
+      "single": 99.20127795527156,
+      "reference": 78.1150159744409,
+      "conflict": 15.97444089456869
+    },
+    {
+      "role": "task",
+      "model": "mimo_audio7b",
+      "interface": "openqa",
+      "n": 626,
+      "single": 96.80511182108626,
+      "reference": 68.53035143769968,
+      "conflict": 57.3482428115016
+    },
+    {
+      "role": "task",
+      "model": "minicpm",
+      "interface": "mcq",
+      "n": 1250,
+      "single": 97.28,
+      "reference": 80.32,
+      "conflict": 28.0
+    },
+    {
+      "role": "task",
+      "model": "minicpm",
+      "interface": "openqa",
+      "n": 1250,
+      "single": 93.84,
+      "reference": 64.24,
+      "conflict": 58.32
+    },
+    {
+      "role": "task",
+      "model": "minicpm_v45",
+      "interface": "mcq",
+      "n": 624,
+      "single": 95.99358974358974,
+      "reference": 93.75,
+      "conflict": 14.423076923076923
+    },
+    {
+      "role": "task",
+      "model": "minicpm_v45",
+      "interface": "openqa",
+      "n": 624,
+      "single": 87.5,
+      "reference": 84.13461538461539,
+      "conflict": 44.87179487179487
+    },
+    {
+      "role": "task",
+      "model": "nemotron",
+      "interface": "mcq",
+      "n": 1250,
+      "single": 97.92,
+      "reference": 98.48,
+      "conflict": 26.16
+    },
+    {
+      "role": "task",
+      "model": "nemotron",
+      "interface": "openqa",
+      "n": 1250,
+      "single": 90.32,
+      "reference": 63.6,
+      "conflict": 50.56
+    },
+    {
+      "role": "task",
+      "model": "qwen",
+      "interface": "mcq",
+      "n": 1250,
+      "single": 98.72,
+      "reference": 96.4,
+      "conflict": 57.76
+    },
+    {
+      "role": "task",
+      "model": "qwen",
+      "interface": "openqa",
+      "n": 1250,
+      "single": 94.96,
+      "reference": 90.08,
+      "conflict": 81.76
+    },
+    {
+      "role": "task",
+      "model": "qwen37_plus",
+      "interface": "mcq",
+      "n": 624,
+      "single": 98.5576923076923,
+      "reference": 96.7948717948718,
+      "conflict": 67.46794871794872
+    },
+    {
+      "role": "task",
+      "model": "qwen37_plus",
+      "interface": "openqa",
+      "n": 624,
+      "single": 95.3525641025641,
+      "reference": 91.98717948717949,
+      "conflict": 78.0448717948718
+    },
+    {
+      "role": "task",
+      "model": "qwen38_omni_flash",
+      "interface": "mcq",
+      "n": 1247,
+      "single": 98.55653568564554,
+      "reference": 96.95268644747394,
+      "conflict": 91.90056134723336
+    },
+    {
+      "role": "task",
+      "model": "qwen38_omni_flash",
+      "interface": "openqa",
+      "n": 1246,
+      "single": 96.54895666131621,
+      "reference": 92.85714285714286,
+      "conflict": 84.1091492776886
+    },
+    {
+      "role": "task",
+      "model": "qwen3_vl30ba3b",
+      "interface": "mcq",
+      "n": 624,
+      "single": 96.7948717948718,
+      "reference": 96.31410256410257,
+      "conflict": 32.05128205128205
+    },
+    {
+      "role": "task",
+      "model": "qwen3_vl30ba3b",
+      "interface": "openqa",
+      "n": 624,
+      "single": 92.1474358974359,
+      "reference": 85.41666666666667,
+      "conflict": 75.80128205128206
+    },
+    {
+      "role": "task",
+      "model": "stepaudio3_chat",
+      "interface": "mcq",
+      "n": 625,
+      "single": 100.0,
+      "reference": 100.0,
+      "conflict": 100.0
+    },
+    {
+      "role": "task",
+      "model": "stepaudio3_chat",
+      "interface": "openqa",
+      "n": 626,
+      "single": 98.56230031948881,
+      "reference": 98.8817891373802,
+      "conflict": 99.20127795527156
+    },
+    {
+      "role": "evidence",
+      "model": "audio_flamingo3_hf",
+      "interface": "mcq",
+      "n": 624,
+      "single": 100.0,
+      "reference": 96.7948717948718,
+      "conflict": 40.544871794871796
+    },
+    {
+      "role": "evidence",
+      "model": "audio_flamingo3_hf",
+      "interface": "openqa",
+      "n": 624,
+      "single": 93.91025641025641,
+      "reference": 90.06410256410257,
+      "conflict": 37.17948717948718
+    },
+    {
+      "role": "evidence",
+      "model": "doubao_2_0_lite",
+      "interface": "mcq",
+      "n": 1250,
+      "single": 99.52,
+      "reference": 95.04,
+      "conflict": 57.92
+    },
+    {
+      "role": "evidence",
+      "model": "doubao_2_0_lite",
+      "interface": "openqa",
+      "n": 1250,
+      "single": 95.36,
+      "reference": 85.6,
+      "conflict": 45.28
+    },
+    {
+      "role": "evidence",
+      "model": "internvl35",
+      "interface": "mcq",
+      "n": 626,
+      "single": 95.84664536741214,
+      "reference": 93.13099041533546,
+      "conflict": 59.26517571884984
+    },
+    {
+      "role": "evidence",
+      "model": "internvl35",
+      "interface": "openqa",
+      "n": 625,
+      "single": 89.44,
+      "reference": 80.64,
+      "conflict": 51.04
+    },
+    {
+      "role": "evidence",
+      "model": "mimo",
+      "interface": "mcq",
+      "n": 1250,
+      "single": 97.44,
+      "reference": 90.56,
+      "conflict": 47.84
+    },
+    {
+      "role": "evidence",
+      "model": "mimo",
+      "interface": "openqa",
+      "n": 1250,
+      "single": 90.24,
+      "reference": 76.64,
+      "conflict": 39.44
+    },
+    {
+      "role": "evidence",
+      "model": "mimo_audio7b",
+      "interface": "mcq",
+      "n": 624,
+      "single": 96.7948717948718,
+      "reference": 59.93589743589744,
+      "conflict": 14.423076923076923
+    },
+    {
+      "role": "evidence",
+      "model": "mimo_audio7b",
+      "interface": "openqa",
+      "n": 624,
+      "single": 93.58974358974359,
+      "reference": 62.66025641025641,
+      "conflict": 11.538461538461538
+    },
+    {
+      "role": "evidence",
+      "model": "minicpm",
+      "interface": "mcq",
+      "n": 1250,
+      "single": 97.92,
+      "reference": 92.72,
+      "conflict": 31.36
+    },
+    {
+      "role": "evidence",
+      "model": "minicpm",
+      "interface": "openqa",
+      "n": 1250,
+      "single": 92.32,
+      "reference": 84.96,
+      "conflict": 34.96
+    },
+    {
+      "role": "evidence",
+      "model": "minicpm_v45",
+      "interface": "mcq",
+      "n": 626,
+      "single": 97.76357827476038,
+      "reference": 94.40894568690096,
+      "conflict": 79.2332268370607
+    },
+    {
+      "role": "evidence",
+      "model": "minicpm_v45",
+      "interface": "openqa",
+      "n": 626,
+      "single": 90.73482428115015,
+      "reference": 87.06070287539936,
+      "conflict": 78.1150159744409
+    },
+    {
+      "role": "evidence",
+      "model": "nemotron",
+      "interface": "mcq",
+      "n": 1250,
+      "single": 97.44,
+      "reference": 96.56,
+      "conflict": 53.52
+    },
+    {
+      "role": "evidence",
+      "model": "nemotron",
+      "interface": "openqa",
+      "n": 1250,
+      "single": 92.0,
+      "reference": 87.6,
+      "conflict": 50.96
+    },
+    {
+      "role": "evidence",
+      "model": "qwen",
+      "interface": "mcq",
+      "n": 1250,
+      "single": 99.52,
+      "reference": 95.36,
+      "conflict": 59.6
+    },
+    {
+      "role": "evidence",
+      "model": "qwen",
+      "interface": "openqa",
+      "n": 1250,
+      "single": 94.24,
+      "reference": 84.48,
+      "conflict": 52.72
+    },
+    {
+      "role": "evidence",
+      "model": "qwen37_plus",
+      "interface": "mcq",
+      "n": 626,
+      "single": 97.76357827476038,
+      "reference": 97.76357827476038,
+      "conflict": 92.33226837060703
+    },
+    {
+      "role": "evidence",
+      "model": "qwen37_plus",
+      "interface": "openqa",
+      "n": 626,
+      "single": 92.01277955271566,
+      "reference": 92.97124600638978,
+      "conflict": 84.82428115015975
+    },
+    {
+      "role": "evidence",
+      "model": "qwen38_omni_flash",
+      "interface": "mcq",
+      "n": 1250,
+      "single": 99.04,
+      "reference": 98.96,
+      "conflict": 79.36
+    },
+    {
+      "role": "evidence",
+      "model": "qwen38_omni_flash",
+      "interface": "openqa",
+      "n": 1249,
+      "single": 92.95436349079263,
+      "reference": 94.07526020816654,
+      "conflict": 77.58206565252202
+    },
+    {
+      "role": "evidence",
+      "model": "qwen3_vl30ba3b",
+      "interface": "mcq",
+      "n": 626,
+      "single": 98.72204472843451,
+      "reference": 91.3738019169329,
+      "conflict": 59.90415335463259
+    },
+    {
+      "role": "evidence",
+      "model": "qwen3_vl30ba3b",
+      "interface": "openqa",
+      "n": 626,
+      "single": 90.09584664536742,
+      "reference": 75.39936102236422,
+      "conflict": 52.715654952076676
+    },
+    {
+      "role": "evidence",
+      "model": "stepaudio3_chat",
+      "interface": "mcq",
+      "n": 623,
+      "single": 100.0,
+      "reference": 98.3948635634029,
+      "conflict": 34.028892455858745
+    },
+    {
+      "role": "evidence",
+      "model": "stepaudio3_chat",
+      "interface": "openqa",
+      "n": 623,
+      "single": 99.03691813804173,
+      "reference": 89.24558587479936,
+      "conflict": 43.017656500802566
+    }
+  ]
+}

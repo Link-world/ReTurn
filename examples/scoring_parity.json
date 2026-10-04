@@ -1,0 +1,29 @@
+{
+  "qwen38_api": {
+    "selected_base_tasks_checked": 80,
+    "physical_scores_compared": 240,
+    "score_fields_compared": 5,
+    "mismatches": 0,
+    "example_base_tasks": 8,
+    "example_requests_with_native": 40,
+    "cache_judgments": 4
+  },
+  "qwen37_api": {
+    "selected_base_tasks_checked": 40,
+    "physical_scores_compared": 120,
+    "score_fields_compared": 5,
+    "mismatches": 0,
+    "example_base_tasks": 4,
+    "example_requests_with_native": 20,
+    "cache_judgments": 4
+  },
+  "stepaudio_api": {
+    "selected_base_tasks_checked": 40,
+    "physical_scores_compared": 120,
+    "score_fields_compared": 5,
+    "mismatches": 0,
+    "example_base_tasks": 4,
+    "example_requests_with_native": 20,
+    "cache_judgments": 0
+  }
+}

@@ -1,0 +1,1197 @@
+{
+  "config": {
+    "kind": "api",
+    "model": "qwen3.7-plus",
+    "modalities": [
+      "V"
+    ],
+    "env_prefix": "VISUAL",
+    "max_tokens": 1024,
+    "retry_tokens": 2048,
+    "attempts": 3,
+    "backend": "qwen37_api",
+    "temperature": 0,
+    "fps": 2,
+    "video_max_side": 768,
+    "protocol_version": "preview-v1"
+  },
+  "endpoint": null,
+  "model_location": null,
+  "inputs": [
+    {
+      "request_id": "s24-5-rp-rr-073::C::mcq",
+      "interface": "mcq",
+      "condition": "C",
+      "operation": "paired_control",
+      "horizon": "short",
+      "required_modality": "V",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0024.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0024.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What type of head covering is the main visible person wearing in this clip?\nOptions:\nA. baseball cap\nB. hood\nC. fedora\nD. knit beanie\nAnswer with only the option letter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-5-rp-rr-073::C::openqa",
+      "interface": "openqa",
+      "condition": "C",
+      "operation": "paired_control",
+      "horizon": "short",
+      "required_modality": "V",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0024.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0024.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What type of head covering is the main visible person wearing in this clip?\nAnswer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-5-rp-rr-073::preserve::mcq::H0",
+      "interface": "mcq",
+      "condition": "H0",
+      "operation": "preserve",
+      "horizon": "short",
+      "required_modality": "V",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0024.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0024.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What type of head covering is the main visible person wearing in this clip?\nOptions:\nA. baseball cap\nB. hood\nC. fedora\nD. knit beanie\nAnswer with only the option letter."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-5-rp-rr-073::preserve::mcq::OLD"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0024.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0024.mp4"
+            },
+            {
+              "type": "text",
+              "text": "For this new clip, answer the first question again using the options from that first question. Answer with only the option letter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-5-rp-rr-073::preserve::mcq::OLD",
+      "interface": "mcq",
+      "condition": "AUX",
+      "operation": "preserve",
+      "horizon": "short",
+      "required_modality": "V",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0024.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0024.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What type of head covering is the main visible person wearing in this clip?\nOptions:\nA. baseball cap\nB. hood\nC. fedora\nD. knit beanie\nAnswer with only the option letter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-5-rp-rr-073::preserve::openqa::H0",
+      "interface": "openqa",
+      "condition": "H0",
+      "operation": "preserve",
+      "horizon": "short",
+      "required_modality": "V",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0024.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0024.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What type of head covering is the main visible person wearing in this clip?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-5-rp-rr-073::preserve::openqa::OLD"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0024.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0024.mp4"
+            },
+            {
+              "type": "text",
+              "text": "For this new clip, answer the first question again. Answer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-5-rp-rr-073::preserve::openqa::OLD",
+      "interface": "openqa",
+      "condition": "AUX",
+      "operation": "preserve",
+      "horizon": "short",
+      "required_modality": "V",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0024.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0024.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What type of head covering is the main visible person wearing in this clip?\nAnswer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-5-rp-rr-073::revise::mcq::H0",
+      "interface": "mcq",
+      "condition": "H0",
+      "operation": "revise",
+      "horizon": "short",
+      "required_modality": "V",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0025.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0025.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What type of head covering is the main visible person wearing in this clip?\nOptions:\nA. baseball cap\nB. hood\nC. fedora\nD. knit beanie\nAnswer with only the option letter."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-5-rp-rr-073::revise::mcq::OLD"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0024.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0024.mp4"
+            },
+            {
+              "type": "text",
+              "text": "For this new clip, answer the first question again using the options from that first question. Answer with only the option letter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-5-rp-rr-073::revise::mcq::OLD",
+      "interface": "mcq",
+      "condition": "AUX",
+      "operation": "revise",
+      "horizon": "short",
+      "required_modality": "V",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0025.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0025.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What type of head covering is the main visible person wearing in this clip?\nOptions:\nA. baseball cap\nB. hood\nC. fedora\nD. knit beanie\nAnswer with only the option letter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-5-rp-rr-073::revise::openqa::H0",
+      "interface": "openqa",
+      "condition": "H0",
+      "operation": "revise",
+      "horizon": "short",
+      "required_modality": "V",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0025.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0025.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What type of head covering is the main visible person wearing in this clip?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-5-rp-rr-073::revise::openqa::OLD"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0024.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0024.mp4"
+            },
+            {
+              "type": "text",
+              "text": "For this new clip, answer the first question again. Answer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-5-rp-rr-073::revise::openqa::OLD",
+      "interface": "openqa",
+      "condition": "AUX",
+      "operation": "revise",
+      "horizon": "short",
+      "required_modality": "V",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0025.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0025.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What type of head covering is the main visible person wearing in this clip?\nAnswer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-v-old-select-15::C::mcq",
+      "interface": "mcq",
+      "condition": "C",
+      "operation": "paired_control",
+      "horizon": "shared",
+      "required_modality": "V",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0094.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0094.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What kind of place is shown?\nA. park\nB. office\nC. street\nD. sports field\nAnswer with only the option letter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-v-old-select-15::C::openqa",
+      "interface": "openqa",
+      "condition": "C",
+      "operation": "paired_control",
+      "horizon": "shared",
+      "required_modality": "V",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0094.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0094.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What kind of place is shown?\nAnswer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-v-old-select-15::long::NATIVE0",
+      "interface": "openqa",
+      "condition": "AUX",
+      "operation": "history",
+      "horizon": "long",
+      "required_modality": "V",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0020.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0020.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What color is the yarn?\nAnswer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-v-old-select-15::long::NATIVE1",
+      "interface": "openqa",
+      "condition": "AUX",
+      "operation": "history",
+      "horizon": "long",
+      "required_modality": "V",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0020.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0020.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What color is the yarn?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE0"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0095.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0095.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What word is printed on the person's shirt?\nAnswer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-v-old-select-15::long::NATIVE2",
+      "interface": "openqa",
+      "condition": "AUX",
+      "operation": "history",
+      "horizon": "long",
+      "required_modality": "V",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0020.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0020.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What color is the yarn?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE0"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0095.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0095.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What word is printed on the person's shirt?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE1"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0094.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0094.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What color is the field of the roadside flag?\nAnswer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s24-v-old-select-15::long::NATIVE3",
+      "interface": "openqa",
+      "condition": "AUX",
+      "operation": "history",
+      "horizon": "long",
+      "required_modality": "V",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0020.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0020.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What color is the yarn?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE0"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0095.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0095.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What word is printed on the person's shirt?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE1"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0094.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0094.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What color is the field of the roadside flag?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE2"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0096.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0096.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What repository is open?\nAnswer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s26-wording-revision::s24-v-old-select-15::long::rebind::mcq",
+      "interface": "mcq",
+      "condition": "H0",
+      "operation": "rebind",
+      "horizon": "long",
+      "required_modality": "V",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0020.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0020.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What color is the yarn?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE0"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0095.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0095.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What word is printed on the person's shirt?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE1"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0094.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0094.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What color is the field of the roadside flag?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE2"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0096.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0096.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What repository is open?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE3"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0026.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0026.mp4"
+            },
+            {
+              "type": "text",
+              "text": "For the third clip I shared, answer the following question.\nWhat kind of place is shown?\nA. park\nB. office\nC. street\nD. sports field\nAnswer with only the option letter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s26-wording-revision::s24-v-old-select-15::long::rebind::openqa",
+      "interface": "openqa",
+      "condition": "H0",
+      "operation": "rebind",
+      "horizon": "long",
+      "required_modality": "V",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0020.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0020.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What color is the yarn?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE0"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0095.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0095.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What word is printed on the person's shirt?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE1"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0094.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0094.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What color is the field of the roadside flag?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE2"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0096.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0096.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What repository is open?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE3"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0026.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0026.mp4"
+            },
+            {
+              "type": "text",
+              "text": "For the third clip I shared, answer the following question.\nWhat kind of place is shown?\nAnswer briefly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s26-wording-revision::s24-v-old-select-15::long::retrieve::mcq",
+      "interface": "mcq",
+      "condition": "H0",
+      "operation": "retrieve",
+      "horizon": "long",
+      "required_modality": "V",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0020.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0020.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What color is the yarn?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE0"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0095.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0095.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What word is printed on the person's shirt?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE1"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0094.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0094.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What color is the field of the roadside flag?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE2"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0096.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0096.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What repository is open?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE3"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0073.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0073.mp4"
+            },
+            {
+              "type": "text",
+              "text": "For the third clip I shared, answer the following question.\nWhat kind of place is shown?\nA. park\nB. office\nC. street\nD. sports field\nAnswer with only the option letter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_id": "s26-wording-revision::s24-v-old-select-15::long::retrieve::openqa",
+      "interface": "openqa",
+      "condition": "H0",
+      "operation": "retrieve",
+      "horizon": "long",
+      "required_modality": "V",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0020.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0020.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What color is the yarn?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE0"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0095.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0095.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What word is printed on the person's shirt?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE1"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0094.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0094.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What color is the field of the roadside flag?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE2"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0096.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0096.mp4"
+            },
+            {
+              "type": "text",
+              "text": "What repository is open?\nAnswer briefly."
+            }
+          ]
+        },
+        {
+          "role": "assistant",
+          "content_binding": {
+            "kind": "REQUEST_RAW",
+            "request_id": "s24-v-old-select-15::long::NATIVE3"
+          }
+        },
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "audio",
+              "audio": "data/media/clip-0073.wav"
+            },
+            {
+              "type": "video",
+              "video": "data/media/clip-0073.mp4"
+            },
+            {
+              "type": "text",
+              "text": "For the third clip I shared, answer the following question.\nWhat kind of place is shown?\nAnswer briefly."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "task_ids": [
+    "s24-core-candidate-006080",
+    "s24-core-candidate-006079",
+    "s24-5-core-candidate-000181",
+    "s24-5-core-candidate-000182"
+  ],
+  "interfaces": [
+    "openqa",
+    "mcq"
+  ],
+  "provenance": "Historical formal cache replay; not a current API run. Dates are unknown unless present in original row."
+}

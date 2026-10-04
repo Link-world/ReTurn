@@ -1,0 +1,53 @@
+model,family,interface,horizon,single_accuracy_pct,multi_accuracy_pct,degradation_pp,valid_pairs
+Qwen3.8-Omni-Flash,Omni,openqa,short,94.5578231292517,91.11644657863145,3.441376550620248,2499
+Qwen3.8-Omni-Flash,Omni,openqa,long,94.9498997995992,83.16633266533066,11.783567134268537,2495
+Qwen3.8-Omni-Flash,Omni,mcq,short,98.8,93.36,5.44,2500
+Qwen3.8-Omni-Flash,Omni,mcq,long,98.7985582699239,90.22827392871446,8.570284341209451,2497
+Doubao-Seed-2.0-Lite,Omni,openqa,short,96.4,89.76,6.64,2500
+Doubao-Seed-2.0-Lite,Omni,openqa,long,96.56,63.0,33.56,2500
+Doubao-Seed-2.0-Lite,Omni,mcq,short,99.44,89.04,10.4,2500
+Doubao-Seed-2.0-Lite,Omni,mcq,long,99.36,66.28,33.08,2500
+Qwen3-Omni,Omni,openqa,short,94.64,91.64,3.0,2500
+Qwen3-Omni,Omni,openqa,long,94.56,62.88,31.68,2500
+Qwen3-Omni,Omni,mcq,short,99.04,89.68,9.36,2500
+Qwen3-Omni,Omni,mcq,long,99.2,64.88,34.32,2500
+MiMo-V2.5,Omni,openqa,short,91.44,80.2,11.24,2500
+MiMo-V2.5,Omni,openqa,long,92.0,47.28,44.72,2500
+MiMo-V2.5,Omni,mcq,short,97.6,75.88,21.72,2500
+MiMo-V2.5,Omni,mcq,long,97.36,53.16,44.2,2500
+MiniCPM-o 4.5,Omni,openqa,short,93.12,78.68,14.44,2500
+MiniCPM-o 4.5,Omni,openqa,long,93.04,42.56,50.48,2500
+MiniCPM-o 4.5,Omni,mcq,short,97.6,68.44,29.16,2500
+MiniCPM-o 4.5,Omni,mcq,long,97.6,47.76,49.84,2500
+Nemotron-3-Nano-Omni,Omni,openqa,short,91.04,85.88,5.16,2500
+Nemotron-3-Nano-Omni,Omni,openqa,long,91.28,40.48,50.8,2500
+Nemotron-3-Nano-Omni,Omni,mcq,short,97.68,78.72,18.96,2500
+Nemotron-3-Nano-Omni,Omni,mcq,long,97.68,58.64,39.04,2500
+Qwen3.7-Plus,LVLM,openqa,short,93.44,92.56,0.88,1250
+Qwen3.7-Plus,LVLM,openqa,long,93.92,81.36,12.56,1250
+Qwen3.7-Plus,LVLM,mcq,short,98.24,93.52,4.72,1250
+Qwen3.7-Plus,LVLM,mcq,long,98.08,83.68,14.4,1250
+MiniCPM-V 4.5,LVLM,openqa,short,89.12,82.32,6.8,1250
+MiniCPM-V 4.5,LVLM,openqa,long,89.12,64.8,24.32,1250
+MiniCPM-V 4.5,LVLM,mcq,short,97.12,76.4,20.72,1250
+MiniCPM-V 4.5,LVLM,mcq,long,96.64,64.56,32.08,1250
+Qwen3-VL,LVLM,openqa,short,91.04,87.92,3.12,1250
+Qwen3-VL,LVLM,openqa,long,91.2,56.72,34.48,1250
+Qwen3-VL,LVLM,mcq,short,97.92,80.32,17.6,1250
+Qwen3-VL,LVLM,mcq,long,97.6,59.52,38.08,1250
+InternVL3.5,LVLM,openqa,short,85.10808646917533,56.36509207365893,28.742994395516412,1249
+InternVL3.5,LVLM,openqa,long,85.28,31.84,53.44,1250
+InternVL3.5,LVLM,mcq,short,95.04,70.48,24.56,1250
+InternVL3.5,LVLM,mcq,long,95.2,58.32,36.88,1250
+StepAudio 3,LALM,openqa,short,98.71794871794872,80.04807692307692,18.669871794871796,1248
+StepAudio 3,LALM,openqa,long,98.88,85.2,13.68,1250
+StepAudio 3,LALM,mcq,short,100.0,84.8314606741573,15.168539325842696,1246
+StepAudio 3,LALM,mcq,long,100.0,81.44,18.56,1250
+Audio Flamingo 3,LALM,openqa,short,95.84,72.64,23.2,1250
+Audio Flamingo 3,LALM,openqa,long,95.84,54.16,41.68,1250
+Audio Flamingo 3,LALM,mcq,short,99.84,65.84,34.0,1250
+Audio Flamingo 3,LALM,mcq,long,99.84,55.28,44.56,1250
+MiMo-Audio,LALM,openqa,short,94.88,62.72,32.16,1250
+MiMo-Audio,LALM,openqa,long,95.52,37.36,58.16,1250
+MiMo-Audio,LALM,mcq,short,97.76,49.6,48.16,1250
+MiMo-Audio,LALM,mcq,long,98.24,34.64,63.6,1250

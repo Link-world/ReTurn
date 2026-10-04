@@ -1,0 +1,13 @@
+-r requirements.txt
+# Exact versions used in the local validation; install a CUDA-compatible PyTorch build first.
+torch==2.12.1
+torchvision==0.27.1
+transformers==5.12.1
+accelerate==1.14.0
+numpy==2.2.6
+qwen-omni-utils==0.0.9
+decord==0.6.0
+soundfile==0.14.0
+librosa==0.11.0
+av==17.1.0
+# Qwen3-Omni additionally requires flash-attn 2.8.3.post1, built for your CUDA/PyTorch.

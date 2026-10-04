@@ -1,0 +1,18 @@
+{
+  "kind": "api",
+  "model": "qwen3.8-omni-flash",
+  "modalities": [
+    "V",
+    "A"
+  ],
+  "env_prefix": "OMNI",
+  "max_tokens": 1024,
+  "retry_tokens": 4096,
+  "attempts": 5,
+  "reasoning_effort": "none",
+  "backend": "qwen38_api",
+  "temperature": 0,
+  "fps": 2,
+  "video_max_side": 768,
+  "protocol_version": "preview-v1"
+}

@@ -1,0 +1,166 @@
+{
+  "audio_flamingo3": {
+    "status": "passed_current_inference_scoring_reporting",
+    "model": "nvidia/audio-flamingo-3-hf",
+    "base_tasks": 4,
+    "physical_requests_including_native": 20,
+    "physical_scored_final_requests": 12,
+    "valid_paired_logical_views": 8,
+    "excluded_views": 0,
+    "modalities": [
+      "A"
+    ],
+    "horizons": [
+      "short",
+      "long"
+    ],
+    "interfaces": [
+      "openqa",
+      "mcq"
+    ],
+    "first_current_request_utc": "2026-09-30T12:17:42.508697+00:00",
+    "last_current_request_utc": "2026-09-30T12:17:50.141856+00:00",
+    "initial_error_attempt_records": 9,
+    "recovery_note": "Restored the established CUDA autocast context after a Float/BFloat16 mismatch.",
+    "new_blind_review_calls": 1,
+    "blind_review_requested_reasoning_effort": "medium",
+    "summary": "Small fixed compatibility subset; not all 80 preview tasks."
+  },
+  "qwen37_api": {
+    "status": "passed_current_inference_scoring_reporting",
+    "model": "qwen3.7-plus",
+    "base_tasks": 4,
+    "physical_requests_including_native": 20,
+    "physical_scored_final_requests": 12,
+    "valid_paired_logical_views": 8,
+    "excluded_views": 0,
+    "modalities": [
+      "V"
+    ],
+    "horizons": [
+      "short",
+      "long"
+    ],
+    "interfaces": [
+      "openqa",
+      "mcq"
+    ],
+    "first_current_request_utc": "2026-09-30T12:17:34.030108+00:00",
+    "last_current_request_utc": "2026-09-30T12:18:42.815538+00:00",
+    "initial_error_attempt_records": 7,
+    "recovery_note": "Bypassed a failing workspace proxy for the authorized endpoint; TLS verification remained enabled.",
+    "new_blind_review_calls": 1,
+    "blind_review_requested_reasoning_effort": "medium",
+    "summary": "Small fixed compatibility subset; not all 80 preview tasks."
+  },
+  "qwen38_api": {
+    "status": "passed_current_inference_scoring_reporting",
+    "model": "qwen3.8-omni-flash",
+    "base_tasks": 8,
+    "physical_requests_including_native": 40,
+    "physical_scored_final_requests": 24,
+    "valid_paired_logical_views": 16,
+    "excluded_views": 0,
+    "modalities": [
+      "V",
+      "A"
+    ],
+    "horizons": [
+      "short",
+      "long"
+    ],
+    "interfaces": [
+      "openqa",
+      "mcq"
+    ],
+    "first_current_request_utc": "2026-09-30T12:14:25.909904+00:00",
+    "last_current_request_utc": "2026-09-30T12:15:44.157057+00:00",
+    "initial_error_attempt_records": 0,
+    "recovery_note": null,
+    "new_blind_review_calls": 1,
+    "blind_review_requested_reasoning_effort": "medium",
+    "summary": "Small fixed compatibility subset; not all 80 preview tasks."
+  },
+  "qwen3_omni": {
+    "status": "passed_current_inference_scoring_reporting",
+    "model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    "base_tasks": 8,
+    "physical_requests_including_native": 40,
+    "physical_scored_final_requests": 24,
+    "valid_paired_logical_views": 16,
+    "excluded_views": 0,
+    "modalities": [
+      "V",
+      "A"
+    ],
+    "horizons": [
+      "short",
+      "long"
+    ],
+    "interfaces": [
+      "openqa",
+      "mcq"
+    ],
+    "first_current_request_utc": "2026-09-30T12:17:59.149152+00:00",
+    "last_current_request_utc": "2026-09-30T12:18:43.639251+00:00",
+    "initial_error_attempt_records": 18,
+    "recovery_note": "Recovered the adapter stop-token check by recognizing the model im_end token; the initial truncated labels were an adapter error, not a model truncation finding.",
+    "new_blind_review_calls": 1,
+    "blind_review_requested_reasoning_effort": "medium",
+    "summary": "Small fixed compatibility subset; not all 80 preview tasks."
+  },
+  "qwen3_vl": {
+    "status": "passed_current_inference_scoring_reporting",
+    "model": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "base_tasks": 4,
+    "physical_requests_including_native": 20,
+    "physical_scored_final_requests": 12,
+    "valid_paired_logical_views": 8,
+    "excluded_views": 0,
+    "modalities": [
+      "V"
+    ],
+    "horizons": [
+      "short",
+      "long"
+    ],
+    "interfaces": [
+      "openqa",
+      "mcq"
+    ],
+    "first_current_request_utc": "2026-09-30T12:14:48.883104+00:00",
+    "last_current_request_utc": "2026-09-30T12:15:16.890090+00:00",
+    "initial_error_attempt_records": 0,
+    "recovery_note": null,
+    "new_blind_review_calls": 1,
+    "blind_review_requested_reasoning_effort": "medium",
+    "summary": "Small fixed compatibility subset; not all 80 preview tasks."
+  },
+  "stepaudio_api": {
+    "status": "passed_current_inference_scoring_reporting",
+    "model": "stepaudio-3-chat-preview",
+    "base_tasks": 4,
+    "physical_requests_including_native": 20,
+    "physical_scored_final_requests": 12,
+    "valid_paired_logical_views": 8,
+    "excluded_views": 0,
+    "modalities": [
+      "A"
+    ],
+    "horizons": [
+      "short",
+      "long"
+    ],
+    "interfaces": [
+      "openqa",
+      "mcq"
+    ],
+    "first_current_request_utc": "2026-09-30T12:14:27.235320+00:00",
+    "last_current_request_utc": "2026-09-30T12:15:08.721749+00:00",
+    "initial_error_attempt_records": 0,
+    "recovery_note": null,
+    "new_blind_review_calls": 1,
+    "blind_review_requested_reasoning_effort": "medium",
+    "summary": "Small fixed compatibility subset; not all 80 preview tasks."
+  }
+}

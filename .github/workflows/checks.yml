@@ -1,0 +1,17 @@
+name: Preview checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - run: python -m return_eval.check
+      - run: python -m compileall -q return_eval scripts
+      - run: python -m return_eval.score --run examples/recorded_outputs/qwen38_api --cache examples/recorded_outputs/qwen38_api/review_cache.jsonl
+      - run: python -m return_eval.report --run examples/recorded_outputs/qwen38_api
+      - run: python -m unittest discover -s tests -v

@@ -1,0 +1,15 @@
+{
+  "task_ids": [
+    "s24-core-candidate-000583",
+    "s24-core-candidate-000584",
+    "s24-5-core-candidate-000375",
+    "s24-5-core-candidate-000376",
+    "s24-core-candidate-006080",
+    "s24-core-candidate-006079",
+    "s24-core-candidate-003112",
+    "s24-core-candidate-003111"
+  ],
+  "base_tasks": 8,
+  "complete_pairs": 4,
+  "coverage": "Both sides and V/A; Long only"
+}

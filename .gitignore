@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.venv/
+runs/
+results/
+data/upstream/
+data/external_sources/
+*.partial.*
+
+# Media require separate terms acceptance.
+data/media/
+*.zip
+.DS_Store

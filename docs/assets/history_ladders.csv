@@ -1,0 +1,13 @@
+role,interface,condition,accuracy_pct,n_models,aggregation
+task,openqa,Single-turn,93.50226417354914,13,Equal-weight model mean; pooled horizons; complete valid operation pairs
+task,openqa,Reconfirm,77.64624857652383,13,Equal-weight model mean; pooled horizons; complete valid operation pairs
+task,openqa,Reground,64.9824801358158,13,Equal-weight model mean; pooled horizons; complete valid operation pairs
+task,mcq,Single-turn,97.99196187001579,13,Equal-weight model mean; pooled horizons; complete valid operation pairs
+task,mcq,Reconfirm,92.33820565416008,13,Equal-weight model mean; pooled horizons; complete valid operation pairs
+task,mcq,Reground,42.91596884741842,13,Equal-weight model mean; pooled horizons; complete valid operation pairs
+evidence,openqa,Single-turn,92.76421016215906,13,Equal-weight model mean; pooled horizons; complete valid operation pairs
+evidence,openqa,Retrieve,83.95357807395986,13,Equal-weight model mean; pooled horizons; complete valid operation pairs
+evidence,openqa,Rebind,50.720970995996204,13,Equal-weight model mean; pooled horizons; complete valid operation pairs
+evidence,mcq,Single-turn,98.29005526463378,13,Equal-weight model mean; pooled horizons; complete valid operation pairs
+evidence,mcq,Retrieve,92.3848422375463,13,Equal-weight model mean; pooled horizons; complete valid operation pairs
+evidence,mcq,Rebind,54.56397426576598,13,Equal-weight model mean; pooled horizons; complete valid operation pairs
