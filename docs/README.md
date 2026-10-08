@@ -2,13 +2,11 @@
 
 **When History Helps and Hurts: Selective History Use across Multimodal Turns**
 
-[🌐 Project Page](https://link-world.github.io/ReTurn/) · [🤗 Dataset Preview](https://huggingface.co/datasets/Link-world/ReTurn) · 📄 Paper (coming soon) · [🏆 Leaderboard](#leaderboard) · Full dataset (coming soon) · [💻 Code & Evaluation](USAGE.md)
+[🌐 Project Page](https://link-world.github.io/ReTurn/) · [🤗 Dataset Preview](https://huggingface.co/datasets/Link-world/ReTurn) · 📄 Paper (coming soon) · [🏆 Leaderboard](#leaderboard) · [💻 Code & Evaluation](USAGE.md)
 
 ReTurn evaluates **selective history use**: conversational history can supply the question or the evidence needed by a request, while also introducing outdated answers or competing observations.
 
 **7,000 base tasks** · Visual and audio evidence · 13 evaluated models
-
-[Task design](#four-controlled-conditions) · [🏆 Leaderboard](#leaderboard) · [Findings](#two-paths-to-conversational-degradation) · [Run the preview](#resources-and-release) · [License](#license-and-copyright) · [Citation](#citation)
 
 ## Four controlled conditions
 
@@ -94,7 +92,7 @@ Bars share a zero baseline and **overlay accuracies rather than add them**. Mean
 
 **Two illustrative failures.** The left case reuses a historical question with current evidence; the right case asks a current question about historical evidence.
 
-<p align="center"><img src="docs/assets/history_cases.png" width="780" alt="Task preservation and evidence arbitration failure examples"></p>
+<p align="center"><img src="docs/assets/history_cases.png" width="600" alt="Task preservation and evidence arbitration failure examples"></p>
 
 ### What the diagnostics reveal
 
@@ -104,7 +102,7 @@ Bars share a zero baseline and **overlay accuracies rather than add them**. Mean
 
 ## Resources and release
 
-[🤗 Dataset Preview](https://huggingface.co/datasets/Link-world/ReTurn) · 📄 Paper (coming soon) · [Baseline scores](docs/assets/leaderboard.csv) · **Full dataset coming soon** · [💻 Code & Evaluation](USAGE.md)
+Full dataset coming soon.
 
 Illustrations are examples from the paper. Data release will respect source-dataset licenses and access restrictions.
 
