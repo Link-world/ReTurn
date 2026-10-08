@@ -2,7 +2,7 @@
 
 **When History Helps and Hurts: Selective History Use across Multimodal Turns**
 
-Paper (coming soon) · [Leaderboard](#leaderboard) · Full dataset (coming soon) · [Preview and evaluation code](USAGE.md)
+[Project Page](https://link-world.github.io/ReTurn/) · Paper (coming soon) · [Leaderboard](#leaderboard) · Full dataset (coming soon) · [Preview and evaluation code](USAGE.md)
 
 ReTurn evaluates **selective history use**: conversational history can supply the question or the evidence needed by a request, while also introducing outdated answers or competing observations.
 
