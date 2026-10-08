@@ -31,3 +31,5 @@
 .conditions{grid-template-columns:1fr}
 }
 
+
+.resource-icon{display:inline-block;width:17px;height:17px;flex:none;vertical-align:-3px}.hf-icon{font-size:17px;line-height:17px}.resource>a,.resource .soon>a{display:inline-flex;align-items:center;gap:7px}.button{gap:8px}

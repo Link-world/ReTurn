@@ -2,13 +2,13 @@
 
 **When History Helps and Hurts: Selective History Use across Multimodal Turns**
 
-[Project Page](https://link-world.github.io/ReTurn/) · [Dataset preview on Hugging Face](https://huggingface.co/datasets/Link-world/ReTurn) · Paper (coming soon) · [Leaderboard](#leaderboard) · Full dataset (coming soon) · [Preview and evaluation code](USAGE.md)
+[🌐 Project Page](https://link-world.github.io/ReTurn/) · [🤗 Dataset Preview](https://huggingface.co/datasets/Link-world/ReTurn) · 📄 Paper (coming soon) · [🏆 Leaderboard](#leaderboard) · Full dataset (coming soon) · [💻 Code & Evaluation](USAGE.md)
 
 ReTurn evaluates **selective history use**: conversational history can supply the question or the evidence needed by a request, while also introducing outdated answers or competing observations.
 
 **7,000 base tasks** · Visual and audio evidence · 13 evaluated models
 
-[Task design](#four-controlled-conditions) · [Leaderboard](#leaderboard) · [Findings](#two-paths-to-conversational-degradation) · [Run the preview](#resources-and-release) · [License](#license-and-copyright) · [Citation](#citation)
+[Task design](#four-controlled-conditions) · [🏆 Leaderboard](#leaderboard) · [Findings](#two-paths-to-conversational-degradation) · [Run the preview](#resources-and-release) · [License](#license-and-copyright) · [Citation](#citation)
 
 ## Four controlled conditions
 
@@ -104,7 +104,7 @@ Bars share a zero baseline and **overlay accuracies rather than add them**. Mean
 
 ## Resources and release
 
-[Dataset preview on Hugging Face](https://huggingface.co/datasets/Link-world/ReTurn) · Paper (coming soon) · [Baseline scores](docs/assets/leaderboard.csv) · **Full dataset coming soon** · [Preview and evaluation code](USAGE.md)
+[🤗 Dataset Preview](https://huggingface.co/datasets/Link-world/ReTurn) · 📄 Paper (coming soon) · [Baseline scores](docs/assets/leaderboard.csv) · **Full dataset coming soon** · [💻 Code & Evaluation](USAGE.md)
 
 Illustrations are examples from the paper. Data release will respect source-dataset licenses and access restrictions.
 
