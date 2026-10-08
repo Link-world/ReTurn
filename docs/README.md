@@ -2,7 +2,7 @@
 
 **When History Helps and Hurts: Selective History Use across Multimodal Turns**
 
-[Project Page](https://link-world.github.io/ReTurn/) · Paper (coming soon) · [Leaderboard](#leaderboard) · Full dataset (coming soon) · [Preview and evaluation code](USAGE.md)
+[Project Page](https://link-world.github.io/ReTurn/) · [Dataset preview on Hugging Face](https://huggingface.co/datasets/Link-world/ReTurn) · Paper (coming soon) · [Leaderboard](#leaderboard) · Full dataset (coming soon) · [Preview and evaluation code](USAGE.md)
 
 ReTurn evaluates **selective history use**: conversational history can supply the question or the evidence needed by a request, while also introducing outdated answers or competing observations.
 
@@ -104,11 +104,11 @@ Bars share a zero baseline and **overlay accuracies rather than add them**. Mean
 
 ## Resources and release
 
-Paper (coming soon) · [Baseline scores](docs/assets/leaderboard.csv) · **Full dataset coming soon** · [Preview and evaluation code](USAGE.md)
+[Dataset preview on Hugging Face](https://huggingface.co/datasets/Link-world/ReTurn) · Paper (coming soon) · [Baseline scores](docs/assets/leaderboard.csv) · **Full dataset coming soon** · [Preview and evaluation code](USAGE.md)
 
 Illustrations are examples from the paper. Data release will respect source-dataset licenses and access restrictions.
 
-The repository provides **80 Development tasks / 40 complete pairs**, an **8-task quick start**, six inference adapters covering Omni, LVLM and LALM, and cached scoring examples. These preview results are separate from the full-benchmark leaderboard above. **Media download coming soon**; new inference requires the companion media package. Cached scoring can be replayed without media or API credentials.
+The repository provides **80 Development tasks / 40 complete pairs**, an **8-task quick start**, six inference adapters covering Omni, LVLM and LALM, and cached scoring examples. These preview results are separate from the full-benchmark leaderboard above. The [companion media package](https://huggingface.co/datasets/Link-world/ReTurn) is available on Hugging Face after accepting the upstream terms; new inference requires this package. Cached scoring can be replayed without media or API credentials.
 
 See the [usage guide](USAGE.md) for installation, native-history inference and paired scoring. Sampling and split details are in the [data card](DATA_CARD.md).
 

@@ -2,11 +2,11 @@
 
 A small, runnable preview of conversation-dependent failures in multimodal models: read frozen tasks, generate **native model histories**, run matched single-turn controls, score, and inspect paired results.
 
-The preview contains **80 base tasks / 40 complete pairs**, sampled from the frozen Development pool. The prepared companion media package covers the **8-task / 4-pair Short quick start** and all **127 clips and WAVs needed by the 80-task preview**; its download is **coming soon**. Results from this subset are **preview subset results**, not a leaderboard submission or a reproduction of the full benchmark scores. Full data and further model adapters are **coming soon**.
+The preview contains **80 base tasks / 40 complete pairs**, sampled from the frozen Development pool. The prepared companion media package covers the **8-task / 4-pair Short quick start** and all **127 clips and WAVs needed by the 80-task preview**; it is [available on Hugging Face](https://huggingface.co/datasets/Link-world/ReTurn) after accepting the upstream terms. Results from this subset are **preview subset results**, not a leaderboard submission or a reproduction of the full benchmark scores. Full data and further model adapters are **coming soon**.
 
 ## Install
 
-The media download is **coming soon**. Until it is available, use the cached examples below without media or API credentials. New inference requires installing the companion archive after accepting its upstream terms.
+Download `return-preview-media.zip` from [Hugging Face](https://huggingface.co/datasets/Link-world/ReTurn) after signing in and accepting the upstream terms. Install it using the command below. Cached examples can still run without media or API credentials.
 
 Run the commands below from the repository root (the directory containing `return_eval/`). Cached scoring and reporting need only Python 3.10+. New inference also requires the Python dependencies below and FFmpeg/ffprobe; API inference needs no GPU.
 
