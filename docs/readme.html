@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ReTurn · Selective History Use</title><link rel="stylesheet" href="github-markdown.css"></head>
 <body><div class="preview-note"><span>ReTurn project page</span><a href="README.md" download>Project overview</a></div><main class="readme-frame"><div class="file-heading"><span class="file-symbol" aria-hidden="true">▤</span> README.md</div><article class="markdown-body"><h1 id="return" class="benchmark-title">ReTurn</h1>
 <p class="paper-title">When History Helps and Hurts: Selective History Use across Multimodal Turns</p>
-<p>Paper (coming soon) · <a href="#leaderboard">Leaderboard</a> · Full dataset (coming soon) · <a href="usage.html">Preview and evaluation code</a></p>
+<p><a href="https://arxiv.org/abs/2610.11948">Paper</a> · <a href="#leaderboard">Leaderboard</a> · Full dataset (coming soon) · <a href="usage.html">Preview and evaluation code</a></p>
 <p>ReTurn evaluates <strong>selective history use</strong>: conversational history can supply the question or the evidence needed by a request, while also introducing outdated answers or competing observations.</p>
 <p><strong>7,000 base tasks</strong> · Visual and audio evidence · 13 evaluated models</p>
 <p class="section-nav"><a href="#four-controlled-conditions">Task design</a> · <a href="#leaderboard">Leaderboard</a> · <a href="#two-paths-to-conversational-degradation">Findings</a> · <a href="#resources-and-release">Run the preview</a> · <a href="#license-and-copyright">License</a> · <a href="#citation">Citation</a></p>
@@ -19,7 +19,7 @@
 
 <h2 id="leaderboard">Leaderboard</h2>
 <p><strong>93.7% → 72.3%:</strong> median model-level OpenQA accuracy from Single-turn to Multi-turn, pooling Short and Long within each model.</p>
-<p>Test OpenQA results, with Long on the left and Short on the right. Blue shows Single-turn; coral shows Multi-turn. Signed drops show Acc<sub>multi</sub> − Acc<sub>single</sub> (pp), the negative of the paper’s Δ<sub>conv</sub>. Models are grouped by supported evidence.</p>
+<p>Test OpenQA results, with Long on the left and Short on the right. Blue shows Single-turn; coral shows Multi-turn. Gaps show Acc<sub>single</sub> − Acc<sub>multi</sub> (pp), consistent with Δ<sub>conv</sub>. Models are grouped by supported evidence.</p>
 <p><a href="assets/leaderboard.svg"><img src="assets/leaderboard.png" alt="ReTurn OpenQA leaderboard: paired Single-turn and Multi-turn accuracy in Long and Short conversations, grouped by model family"></a></p>
 <p><a href="assets/leaderboard.csv">Download scores</a> · <a href="assets/leaderboard.svg">Full-resolution figure</a></p>
 <h3 id="openqa-results">OpenQA results</h3>
@@ -277,7 +277,7 @@
 <li><strong>Adaptation helps, but does not close the gap.</strong> In the Qwen3-Omni study, SFT improves Multi-turn accuracy by 3.42 pp on OpenQA and 2.36 pp on MCQ; Long Rebind remains difficult.</li>
 </ul>
 <h2 id="resources-and-release">Resources and release</h2>
-<p>Paper (coming soon) · <a href="assets/leaderboard.csv">Baseline scores</a> · <strong>Full dataset coming soon · <a href="usage.html">80-task preview and evaluation code</a></strong></p>
+<p><a href="https://arxiv.org/abs/2610.11948">Paper</a> · <a href="assets/leaderboard.csv">Baseline scores</a> · <strong>Full dataset coming soon · <a href="usage.html">80-task preview and evaluation code</a></strong></p>
 <p>Illustrations are examples from the paper. Data release will respect source-dataset licenses and access restrictions.</p>
 <p>The repository provides <strong>80 Development tasks / 40 complete pairs</strong>, an <strong>8-task quick start</strong>, six inference adapters covering Omni, LVLM and LALM, and cached scoring examples. These preview results are separate from the full-benchmark leaderboard above. <a href="https://huggingface.co/datasets/Link-world/ReTurn">Media download available on Hugging Face</a> (accept upstream terms before downloading); new inference requires the companion media package. Cached scoring can be replayed without media or API credentials.</p>
 <p>See the <a href="usage.html">usage guide</a> for installation, native-history inference and paired scoring. Sampling and split details are in the <a href="DATA_CARD.txt">data card</a>.</p>
@@ -287,6 +287,6 @@
 <p>For a copyright concern, please open an issue in the ReTurn code repository with the source URL or clip ID. We will review the request and promptly remove or correct affected materials where warranted. Do not upload disputed media or sensitive personal information to a public issue.</p>
 <h2 id="citation">Citation</h2>
 
-<p>Citation information will be added when the arXiv record is available.</p>
+<p><a href="assets/return.bib">Download BibTeX</a> · <a href="https://arxiv.org/abs/2610.11948">Read the paper</a></p>
 
 </article></main></body></html>

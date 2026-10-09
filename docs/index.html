@@ -1,17 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ReTurn — When History Helps and Hurts</title><meta name="description" content="ReTurn evaluates selective history use in multimodal conversations through four controlled conditions, visual and audio evidence, and matched single-turn references."><link rel="stylesheet" href="project.css"></head><body>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ReTurn — When History Helps and Hurts</title><meta name="description" content="ReTurn evaluates selective history use in multimodal conversations through four controlled conditions, visual and audio evidence, and matched single-turn references."><link rel="stylesheet" href="project.css"><link rel="stylesheet" href="rounded.css"></head><body>
 <nav><a class="brand" href="#">Re<span>Turn</span></a><div class="nav-links"><a href="#benchmark">Benchmark</a><a href="#leaderboard">Leaderboard</a><a href="#findings">Findings</a><a href="https://github.com/Link-world/ReTurn">GitHub ↗</a></div></nav>
 <header class="hero"><div class="container"><p class="eyebrow">A benchmark for selective history use</p><h1>When History <em>Helps and Hurts</em>:<span class="title-second">Selective History Use across Multimodal Turns</span></h1><p class="subtitle">History can supply what a model needs—and distract it from what matters.<br>Can multimodal assistants tell the difference?</p>
 <div class="authors"><span>Shuoyang Sun<sup>1*</sup></span><span>Kerui Gu<sup>2*</sup></span><span>Hao Fang<sup>3</sup></span><span>Shaoli Huang<sup>2†</sup></span><span>Bin Chen<sup>1✉</sup></span></div><p class="institutions"><sup>1</sup> Harbin Institute of Technology, Shenzhen &nbsp; · &nbsp; <sup>2</sup> AgiBot<br><sup>3</sup> Tsinghua Shenzhen International Graduate School, Tsinghua University</p><p class="contributions">* Equal contribution &nbsp; † Project lead &nbsp; ✉ Corresponding author</p>
-<div class="buttons"><a class="button primary" href="#leaderboard"><svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8v6a4 4 0 0 1-8 0V3Zm4 10v6m-4 2h8M8 5H4v2a4 4 0 0 0 4 4m8-6h4v2a4 4 0 0 1-4 4"/></svg>Leaderboard</a><a class="button" href="https://github.com/Link-world/ReTurn"><svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"/></svg>Code &amp; evaluation</a><a class="button" href="https://huggingface.co/datasets/Link-world/ReTurn"><span class="resource-icon hf-icon" aria-hidden="true">🤗</span>Dataset preview</a><span class="button disabled"><svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H5v18h14V8l-5-5Zm0 0v5h5M8 12h8m-8 4h8"/></svg>Paper <small>Coming soon</small></span><span class="button disabled"><svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/></svg>Full dataset <small>Coming soon</small></span></div>
+<div class="buttons"><a class="button" href="https://arxiv.org/abs/2610.11948"><svg class="resource-icon brand-icon brand-arxiv" aria-hidden="true" viewBox="0 0 448 512" fill="currentColor"><g transform="matrix(1.5499998,0,0,-1.5499998,-123.19936,553.59966)"><path d="m 119.65,351.996 c -5.84961,0.13477 -11.1943,-3.29883 -13.502,-8.67578 -2.19629,-5.27051 -0.61914,-8.9668 4.19727,-15.8652 7.05469,-10.3799 78.8242,-96.5625 78.8242,-96.5625 l -15.8828,-14.8633 c -13.3809,-13.3779 -13.9561,-31.333 -1.50977,-43.7754 l 18.4922,-17.6133 -51.5977,-63.377 c -4.00586,-4.26758 -6.48535,-11.7559 -4.24805,-17.1309 2.27832,-5.53613 7.69727,-9.12891 13.6836,-9.07031 3.83398,0.0957 7.43262,1.87402 9.83789,4.86133 l 61.3691,57.0566 94.5762,-90.0703 c 3.19434,-3.08398 7.44336,-4.83984 11.8828,-4.91016 1.60449,0.0039 3.19824,0.245117 4.73242,0.714844 5.7793,1.80566 10.249,6.41797 11.8711,12.252 1.2998,5.47363 -0.27637,11.2334 -4.18164,15.2832 l -83.0859,100.011996 14.8789,13.834 c 11.0957,10.0029 11.1543,27.3906 0.12695,37.4688 l -16.2949,15.6309 56.2559,66.4434 0.0742,0.0859 0.0664,0.0899 c 5.02734,6.53125 7.43164,11.5615 4.83984,17.9395 -3.13379,5.96875 -8.69727,10.29 -15.2559,11.8516 -0.67676,0.0908 -1.35938,0.13574 -2.04297,0.13671 l -0.004,-0.0117 c -4.42871,-0.27051 -8.61035,-2.13086 -11.7754,-5.24023 l -0.13086,-0.10743 -0.12304,-0.11132 -65.207,-59.127 -89.8965,86.2402 c 0,0 -5.33398,6.47754 -10.9707,6.61133 z m 178.104,-33.041 c 0.47852,-0.002 0.95703,-0.0332 1.43164,-0.0957 4.84277,-1.33301 8.95605,-4.54004 11.4316,-8.91016 1.44922,-3.5625 1.00293,-6.45703 -4.19727,-13.2148 l -56.0586,-66.2188 -26.375,25.3027 64.9551,58.9062 c 2.33887,2.41504 5.46484,3.91113 8.8125,4.2168 v 0.0137 z M 192.436,227.402 334.446,57.244 c 2.78711,-3.48926 4.5293,-6.97949 3.3418,-10.9121 -1.16113,-4.30273 -4.43457,-7.71777 -8.68555,-9.05664 -1.08105,-0.333984 -2.20508,-0.503906 -3.33594,-0.505859 -3.20801,0.07617 -6.26953,1.35645 -8.57617,3.58789 l -142.033,135.284999 c -11.1719,11.1719 -9.48242,26.0195 1.39258,36.8945 z"/></g></svg>Paper</a><a class="button" href="https://github.com/Link-world/ReTurn"><svg fill="currentColor" class="resource-icon brand-icon brand-github" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>Code &amp; evaluation</a><a class="button" href="https://huggingface.co/datasets/Link-world/ReTurn"><span class="resource-icon hf-icon" aria-hidden="true">🤗</span>Dataset preview</a><a class="button" href="#leaderboard"><svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8v6a4 4 0 0 1-8 0V3Zm4 10v6m-4 2h8M8 5H4v2a4 4 0 0 0 4 4m8-6h4v2a4 4 0 0 1-4 4"/></svg>Leaderboard</a></div><p class="release-note">Full dataset coming soon.</p>
 <div class="metrics"><div class="metric"><b>7,000</b><span>base tasks · 3,500 matched pairs</span></div><div class="metric"><b>4 conditions</b><span>two roles of conversational history</span></div><div class="metric"><b>Vision + Audio</b><span>two evidence modalities</span></div><div class="metric"><b>13 models</b><span>Omni · LVLM · LALM</span></div></div></div></header>
-<main><section id="benchmark"><div class="container"><div class="section-head"><div><span class="eyebrow">01 / The benchmark</span><h2>Keep the useful history.<br>Resist the interference.</h2></div><p>ReTurn separates two roles of history. Within each pair, the target question, media, and answer stay fixed—only agreement or competition changes.</p></div>
-<div class="duality"><div class="side"><h3>Task-carrying history</h3><div class="formula">Historical question → Current evidence</div><div class="conditions"><div class="condition"><span class="tag">Reference</span><h4>Reconfirm</h4><p>Apply an earlier question to new media. The historical and current evidence support the same answer.</p></div><div class="condition"><span class="tag">Conflict</span><h4>Reground</h4><p>Apply the same earlier question to new media, where the previous answer is now outdated.</p></div></div><div class="target"><b>Target:</b> the current media, interpreted using the historical question.</div></div>
-<div class="side evidence"><h3>Evidence-carrying history</h3><div class="formula">Current question → Historical evidence</div><div class="conditions"><div class="condition"><span class="tag">Reference</span><h4>Retrieve</h4><p>Answer a current question about earlier media, with a weaker competitor in the current turn.</p></div><div class="condition"><span class="tag">Conflict</span><h4>Rebind</h4><p>Answer about the same earlier media, while current media supports a competing answer.</p></div></div><div class="target"><b>Target:</b> the historical media specified by the current question.</div></div></div>
-<div class="paired"><b>Matched Single-turn reference</b><span class="dot"></span><span>Target question + target media, supplied directly</span><span class="dot"></span><span>OpenQA &amp; MCQ</span></div></div></section>
-<section class="tint" id="leaderboard"><div class="container"><div class="section-head"><div><span class="eyebrow">02 / Results</span><h2>Answerable in isolation.<br>Harder in conversation.</h2></div><p>The same underlying questions become substantially harder when the model must select and use information across turns.</p></div>
-<div class="lead-result"><div><div class="big-stat"><span class="single">93.7<span style="font-size:.5em">%</span></span><span class="arrow">→</span><span class="multi">72.3<span style="font-size:.5em">%</span></span></div><div class="stat-label"><span>Single-turn</span><span>Multi-turn</span></div></div><p>Median model-level OpenQA accuracy across 13 models, pooling Short and Long within each model. Both settings ask about the same target question and evidence.</p></div>
-<figure class="figure"><div class="chart-surface"><img src="assets/leaderboard.svg" alt="OpenQA Single-turn and Multi-turn accuracy by model, with Long conversations on the left and Short conversations on the right"></div><figcaption>Test OpenQA results. Blue: Single-turn. Coral: Multi-turn. Signed drops show Multi-turn minus Single-turn accuracy (pp). OMNI models use visual and audio evidence; LVLMs use visual evidence; LALMs use audio evidence.</figcaption></figure><div class="figure-tools"><a href="assets/leaderboard.csv" download>Download results ↓</a><a href="assets/leaderboard.svg">View full-resolution chart ↗</a></div>
-<div class="table-toolbar"><h3>Model results</h3><div class="tabs" role="tablist" aria-label="Answer interface"><button id="tab-openqa" role="tab" aria-controls="panel-openqa" aria-selected="true" tabindex="0">OpenQA</button><button id="tab-mcq" role="tab" aria-controls="panel-mcq" aria-selected="false" tabindex="-1">MCQ</button></div></div>
+<main><section id="overview" class="overview-cases"><div class="container"><div class="cases"><div class="case-layout"><div class="case-copy"><div><p class="eyebrow">01 / Selective history use</p><h2 class="case-title">Keep what matters.<br>Leave interference behind.</h2></div><div><h4><span>LEFT · TASK-CARRYING HISTORY</span>An outdated answer persists</h4><p>The earlier clothing-color question must be applied to the new clip. The model repeats “White,” although the correct answer is “Black.” It should retain the historical question but update its answer using current evidence.</p></div><div><h4><span>RIGHT · EVIDENCE-CARRYING HISTORY</span>Current evidence takes over</h4><p>The current question targets the first clip, whose answer is “Fish.” The model instead answers “Dog” from the newer clip. The question is explicit; the challenge is selecting historical evidence despite a competing current observation.</p></div><p class="case-takeaway">Selective history use means retaining the relevant question or evidence, while resisting information that conflicts with the intended target.</p></div><figure class="figure"><img src="assets/history_cases.png" alt="Paper examples of task-carrying and evidence-carrying history failures"></figure></div></div><div class="controlled-contrasts"><p class="contrast-bridge">To assess selective history use, ReTurn varies historical agreement on the task side and current-media competition on the evidence side.</p><div class="contrast-groups"><div class="contrast-group task"><div class="contrast-heading"><h3>Task-carrying history</h3><p class="contrast-role">Historical question → Current evidence</p></div><div class="contrast-options"><div><h4>Reconfirm <span>Reference</span></h4><p>Apply the historical question to current media; the answer stays the same.</p></div><div><h4>Reground <span>Conflict</span></h4><p>Apply the historical question to current media; the earlier answer is outdated.</p></div></div></div><div class="contrast-group evidence"><div class="contrast-heading"><h3>Evidence-carrying history</h3><p class="contrast-role">Current question → Historical evidence</p></div><div class="contrast-options"><div><h4>Retrieve <span>Reference</span></h4><p>Answer about historical media, with weaker competition from current media.</p></div><div><h4>Rebind <span>Conflict</span></h4><p>Answer about historical media, despite a conflicting answer in current media.</p></div></div></div></div><p class="contrast-control">Within each pair, the target question, media, and answer remain fixed. Each task also has a direct Single-turn counterpart.</p></div></div></section>
+<section class="tint" id="leaderboard"><div class="container"><div class="results-opening"><div class="results-title"><span class="eyebrow">02 / Results</span><h2>Answerable in isolation.<br>Harder in conversation.</h2></div><div class="results-summary"><p class="summary-label">Median OpenQA accuracy</p><div class="summary-values"><strong class="single">93.7<span>%</span></strong><span class="summary-arrow" aria-hidden="true"><svg viewBox="0 0 32 20" width="32" height="20" fill="none"><path d="M2 10h26M21 3l7 7-7 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><strong class="multi">72.3<span>%</span></strong><span class="summary-single-label">Single-turn</span><span class="summary-multi-label">Multi-turn</span></div><p class="summary-scope">Across 13 models · Short + Long pooled · Test</p></div></div>
+<div class="chart-heading"><div><h3>Single-turn vs. Multi-turn</h3><p id="chart-interface-note">OpenQA · Long and Short shown separately</p></div><div class="tabs" role="tablist" aria-label="chart answer interface"><button id="chart-openqa" data-interface="openqa" role="tab" aria-controls="panel-openqa" aria-selected="true" tabindex="0">OpenQA</button><button id="chart-mcq" data-interface="mcq" role="tab" aria-controls="panel-mcq" aria-selected="false" tabindex="-1">MCQ</button></div></div>
+<figure class="figure"><div class="chart-surface"><img id="leaderboard-chart" src="assets/leaderboard_openqa.svg" alt="OpenQA Single-turn and Multi-turn accuracy by model, with Long conversations on the left and Short conversations on the right"></div><figcaption><span id="chart-result-label">Test OpenQA results.</span> Blue: Single-turn. Coral: Multi-turn. Gaps show Single-turn minus Multi-turn accuracy (pp), matching Δconv in the table. OMNI models use visual and audio evidence; LVLMs use visual evidence; LALMs use audio evidence.</figcaption></figure><div class="figure-tools"><a href="assets/leaderboard.csv" download>Download results ↓</a><a id="chart-download" href="assets/leaderboard_openqa.svg">View full-resolution chart ↗</a></div>
+<div class="table-toolbar"><h3>Detailed scores</h3><div class="tabs" role="tablist" aria-label="tab answer interface"><button id="tab-openqa" data-interface="openqa" role="tab" aria-controls="panel-openqa" aria-selected="true" tabindex="0">OpenQA</button><button id="tab-mcq" data-interface="mcq" role="tab" aria-controls="panel-mcq" aria-selected="false" tabindex="-1">MCQ</button></div></div>
 <div class="table-scroll" id="panel-openqa" role="tabpanel" aria-labelledby="tab-openqa"><table>
 <thead>
 <tr>
@@ -25,7 +22,7 @@
 </thead>
 <tbody><tr>
 <td align="left">Qwen3.8-Omni-Flash</td>
-<td align="left">OMNI</td>
+<td align="left"><span class="family-badge family-omni">OMNI</span></td>
 <td align="right"><strong>83.2</strong></td>
 <td align="right">11.8</td>
 <td align="right">91.1</td>
@@ -33,7 +30,7 @@
 </tr>
 <tr>
 <td align="left">Doubao-Seed-2.0-Lite</td>
-<td align="left">OMNI</td>
+<td align="left"><span class="family-badge family-omni">OMNI</span></td>
 <td align="right">63.0</td>
 <td align="right">33.6</td>
 <td align="right">89.8</td>
@@ -41,7 +38,7 @@
 </tr>
 <tr>
 <td align="left">Qwen3-Omni</td>
-<td align="left">OMNI</td>
+<td align="left"><span class="family-badge family-omni">OMNI</span></td>
 <td align="right">62.9</td>
 <td align="right">31.7</td>
 <td align="right">91.6</td>
@@ -49,7 +46,7 @@
 </tr>
 <tr>
 <td align="left">MiMo-V2.5</td>
-<td align="left">OMNI</td>
+<td align="left"><span class="family-badge family-omni">OMNI</span></td>
 <td align="right">47.3</td>
 <td align="right">44.7</td>
 <td align="right">80.2</td>
@@ -57,7 +54,7 @@
 </tr>
 <tr>
 <td align="left">MiniCPM-o 4.5</td>
-<td align="left">OMNI</td>
+<td align="left"><span class="family-badge family-omni">OMNI</span></td>
 <td align="right">42.6</td>
 <td align="right">50.5</td>
 <td align="right">78.7</td>
@@ -65,7 +62,7 @@
 </tr>
 <tr>
 <td align="left">Nemotron-3-Nano-Omni</td>
-<td align="left">OMNI</td>
+<td align="left"><span class="family-badge family-omni">OMNI</span></td>
 <td align="right">40.5</td>
 <td align="right">50.8</td>
 <td align="right">85.9</td>
@@ -73,7 +70,7 @@
 </tr>
 <tr>
 <td align="left">Qwen3.7-Plus</td>
-<td align="left">LVLM</td>
+<td align="left"><span class="family-badge family-lvlm">LVLM</span></td>
 <td align="right"><strong>81.4</strong></td>
 <td align="right">12.6</td>
 <td align="right">92.6</td>
@@ -81,7 +78,7 @@
 </tr>
 <tr>
 <td align="left">MiniCPM-V 4.5</td>
-<td align="left">LVLM</td>
+<td align="left"><span class="family-badge family-lvlm">LVLM</span></td>
 <td align="right">64.8</td>
 <td align="right">24.3</td>
 <td align="right">82.3</td>
@@ -89,7 +86,7 @@
 </tr>
 <tr>
 <td align="left">Qwen3-VL</td>
-<td align="left">LVLM</td>
+<td align="left"><span class="family-badge family-lvlm">LVLM</span></td>
 <td align="right">56.7</td>
 <td align="right">34.5</td>
 <td align="right">87.9</td>
@@ -97,7 +94,7 @@
 </tr>
 <tr>
 <td align="left">InternVL3.5</td>
-<td align="left">LVLM</td>
+<td align="left"><span class="family-badge family-lvlm">LVLM</span></td>
 <td align="right">31.8</td>
 <td align="right">53.4</td>
 <td align="right">56.4</td>
@@ -105,7 +102,7 @@
 </tr>
 <tr>
 <td align="left">StepAudio 3</td>
-<td align="left">LALM</td>
+<td align="left"><span class="family-badge family-lalm">LALM</span></td>
 <td align="right"><strong>85.2</strong></td>
 <td align="right">13.7</td>
 <td align="right">80.0</td>
@@ -113,7 +110,7 @@
 </tr>
 <tr>
 <td align="left">Audio Flamingo 3</td>
-<td align="left">LALM</td>
+<td align="left"><span class="family-badge family-lalm">LALM</span></td>
 <td align="right">54.2</td>
 <td align="right">41.7</td>
 <td align="right">72.6</td>
@@ -121,7 +118,7 @@
 </tr>
 <tr>
 <td align="left">MiMo-Audio</td>
-<td align="left">LALM</td>
+<td align="left"><span class="family-badge family-lalm">LALM</span></td>
 <td align="right">37.4</td>
 <td align="right">58.2</td>
 <td align="right">62.7</td>
@@ -140,7 +137,7 @@
 </thead>
 <tbody><tr>
 <td align="left">Qwen3.8-Omni-Flash</td>
-<td align="left">OMNI</td>
+<td align="left"><span class="family-badge family-omni">OMNI</span></td>
 <td align="right"><strong>90.2</strong></td>
 <td align="right">8.6</td>
 <td align="right">93.4</td>
@@ -148,7 +145,7 @@
 </tr>
 <tr>
 <td align="left">Doubao-Seed-2.0-Lite</td>
-<td align="left">OMNI</td>
+<td align="left"><span class="family-badge family-omni">OMNI</span></td>
 <td align="right">66.3</td>
 <td align="right">33.1</td>
 <td align="right">89.0</td>
@@ -156,7 +153,7 @@
 </tr>
 <tr>
 <td align="left">Qwen3-Omni</td>
-<td align="left">OMNI</td>
+<td align="left"><span class="family-badge family-omni">OMNI</span></td>
 <td align="right">64.9</td>
 <td align="right">34.3</td>
 <td align="right">89.7</td>
@@ -164,7 +161,7 @@
 </tr>
 <tr>
 <td align="left">MiMo-V2.5</td>
-<td align="left">OMNI</td>
+<td align="left"><span class="family-badge family-omni">OMNI</span></td>
 <td align="right">53.2</td>
 <td align="right">44.2</td>
 <td align="right">75.9</td>
@@ -172,7 +169,7 @@
 </tr>
 <tr>
 <td align="left">MiniCPM-o 4.5</td>
-<td align="left">OMNI</td>
+<td align="left"><span class="family-badge family-omni">OMNI</span></td>
 <td align="right">47.8</td>
 <td align="right">49.8</td>
 <td align="right">68.4</td>
@@ -180,7 +177,7 @@
 </tr>
 <tr>
 <td align="left">Nemotron-3-Nano-Omni</td>
-<td align="left">OMNI</td>
+<td align="left"><span class="family-badge family-omni">OMNI</span></td>
 <td align="right">58.6</td>
 <td align="right">39.0</td>
 <td align="right">78.7</td>
@@ -188,7 +185,7 @@
 </tr>
 <tr>
 <td align="left">Qwen3.7-Plus</td>
-<td align="left">LVLM</td>
+<td align="left"><span class="family-badge family-lvlm">LVLM</span></td>
 <td align="right"><strong>83.7</strong></td>
 <td align="right">14.4</td>
 <td align="right">93.5</td>
@@ -196,7 +193,7 @@
 </tr>
 <tr>
 <td align="left">MiniCPM-V 4.5</td>
-<td align="left">LVLM</td>
+<td align="left"><span class="family-badge family-lvlm">LVLM</span></td>
 <td align="right">64.6</td>
 <td align="right">32.1</td>
 <td align="right">76.4</td>
@@ -204,7 +201,7 @@
 </tr>
 <tr>
 <td align="left">Qwen3-VL</td>
-<td align="left">LVLM</td>
+<td align="left"><span class="family-badge family-lvlm">LVLM</span></td>
 <td align="right">59.5</td>
 <td align="right">38.1</td>
 <td align="right">80.3</td>
@@ -212,7 +209,7 @@
 </tr>
 <tr>
 <td align="left">InternVL3.5</td>
-<td align="left">LVLM</td>
+<td align="left"><span class="family-badge family-lvlm">LVLM</span></td>
 <td align="right">58.3</td>
 <td align="right">36.9</td>
 <td align="right">70.5</td>
@@ -220,7 +217,7 @@
 </tr>
 <tr>
 <td align="left">StepAudio 3</td>
-<td align="left">LALM</td>
+<td align="left"><span class="family-badge family-lalm">LALM</span></td>
 <td align="right"><strong>81.4</strong></td>
 <td align="right">18.6</td>
 <td align="right">84.8</td>
@@ -228,7 +225,7 @@
 </tr>
 <tr>
 <td align="left">Audio Flamingo 3</td>
-<td align="left">LALM</td>
+<td align="left"><span class="family-badge family-lalm">LALM</span></td>
 <td align="right">55.3</td>
 <td align="right">44.6</td>
 <td align="right">65.8</td>
@@ -236,17 +233,37 @@
 </tr>
 <tr>
 <td align="left">MiMo-Audio</td>
-<td align="left">LALM</td>
+<td align="left"><span class="family-badge family-lalm">LALM</span></td>
 <td align="right">34.6</td>
 <td align="right">63.6</td>
 <td align="right">49.6</td>
 <td align="right">48.2</td>
 </tr>
 </tbody></table></div><p class="fine">Multi-turn accuracy (%), with conversational degradation Δ<sub>conv</sub> = Acc<sub>single</sub> − Acc<sub>multi</sub> in pp. Short / Long contain 2 / 5 media-bearing user turns, including the final turn. Rows retain the same order across interfaces, sorted by Long OpenQA accuracy within each family. Bold marks each family’s best Long score for the selected interface. Results use valid Single-turn/Multi-turn pairs.</p></div></section>
-<section id="findings"><div class="container"><div class="section-head"><div><span class="eyebrow">03 / What the benchmark reveals</span><h2>Accessing history is only<br>part of the challenge.</h2></div><p>Matched conditions and behavioral probes distinguish access to relevant history from its application and the selection of the intended evidence.</p></div>
-<div class="findings-grid"><figure class="figure"><img src="assets/history_ladders.svg" alt="Two history-use ladders across OpenQA and MCQ"><figcaption>Mean accuracy across 13 model configurations on complete valid operation pairs, pooling Short and Long. Bars overlay accuracies from a shared zero baseline; they do not add. Each model uses its supported modalities. <a href="assets/history_ladders.csv">Plotted values ↗</a></figcaption></figure><div><div class="finding"><h3><span class="index">01</span>Recall ≠ application</h3><p>Qwen3.8-Omni-Flash recalls the historical question in 99.8% of separate Reground probes, yet achieves 84.1% task accuracy. Restating the question raises accuracy to 96.4%.</p></div><div class="finding"><h3><span class="index">02</span>Competing evidence redirects answers</h3><p>For Qwen3-Omni, matching the replacement-media answer rises from 0.1% to 36.5% after a Rebind media swap, while target accuracy barely changes.</p></div><div class="finding"><h3><span class="index">03</span>Adaptation only partly closes the gap</h3><p>Qwen3-Omni SFT improves Multi-turn accuracy by 3.42 pp on OpenQA and 2.36 pp on MCQ. Long Rebind remains difficult.</p></div></div></div>
-<div class="cases"><div class="case-layout"><div class="case-copy"><div><p class="eyebrow">Two illustrative failures</p><h3 class="case-title">Two ways history misleads.</h3></div><div><h4><span>LEFT</span>An outdated answer persists</h4><p>The earlier clothing-color question must be applied to the new clip. The model repeats “White,” although the correct answer is “Black.” It should retain the historical question but update its answer using current evidence.</p></div><div><h4><span>RIGHT</span>Current evidence takes over</h4><p>The current question targets the first clip, whose answer is “Fish.” The model instead answers “Dog” from the newer clip. The question is explicit; the challenge is selecting historical evidence despite a competing current observation.</p></div><p class="case-takeaway">Selective history use means retaining the relevant question or evidence, while resisting information that conflicts with the intended target.</p></div><figure class="figure"><img src="assets/history_cases.png" alt="Paper examples of task-carrying and evidence-carrying history failures"></figure></div></div></div></section>
-<section class="tint construction"><div class="container"><div class="section-head"><div><span class="eyebrow">04 / Controlled evaluation</span><h2>Same target.<br>Different history demands.</h2></div><p>7,000 tasks form 3,500 matched pairs, with balanced visual/audio evidence and Short/Long horizons. Dev: 2,000 tasks; Test: 5,000 tasks.</p></div><figure class="figure"><img src="assets/construction.png" alt="ReTurn benchmark construction and paired evaluation protocol"><figcaption>Each evaluated model generates its own historical replies. OpenQA and MCQ provide two answer views per task. Retrieve reduces competition without guaranteeing its absence. Dev is divided into Dev-Train (1,500) and Dev-Val (500).</figcaption></figure></div></section>
-<section id="resources"><div class="container"><div class="section-head"><div><span class="eyebrow">05 / Resources</span><h2>Explore ReTurn.</h2></div><p>Start with the Development preview and cached evaluation examples. Full dataset and paper links will be added as they become available.</p></div><div class="resource-grid"><div class="resource"><h3>Code &amp; evaluation</h3><p>Six inference adapters covering Omni, LVLM and LALM, paired scoring, and cached examples.</p><a href="https://github.com/Link-world/ReTurn"><svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"/></svg>Open GitHub repository</a></div><div class="resource"><h3>Development preview</h3><p>80 tasks, 40 complete pairs, and an 8-task quick start. Cached scoring needs no media or API credentials.</p><a href="https://github.com/Link-world/ReTurn/blob/main/USAGE.md">Read the usage guide ↗</a><p class="soon"><a href="https://huggingface.co/datasets/Link-world/ReTurn"><span class="resource-icon hf-icon" aria-hidden="true">🤗</span>Download preview &amp; media</a><br>Sign in and accept the upstream terms. Full dataset coming soon.</p></div><div class="resource"><h3>Benchmark results</h3><p>Download the full-benchmark model scores. Development preview outputs are separate from these Test results.</p><a href="assets/leaderboard.csv" download>Download scores ↓</a></div></div></div></section></main>
-<footer><div class="container"><div class="footer-grid"><div><h3>License &amp; attribution</h3><p>Original code: <a href="https://github.com/Link-world/ReTurn/blob/main/LICENSE">MIT</a>. Original ReTurn annotations: <a href="https://github.com/Link-world/ReTurn/blob/main/LICENSE-DATA">CC BY 4.0</a>. Third-party media, inherited content, and model outputs are excluded from these grants. FineVideo and LLaVA-Video-178K materials remain subject to upstream terms. See <a href="https://github.com/Link-world/ReTurn/blob/main/THIRD_PARTY_MEDIA.md">media notices and attribution</a>.</p></div><div id="citation"><h3>Citation</h3><p>Citation information will be added when the arXiv record is available.</p><p>For questions or copyright concerns, <a href="https://github.com/Link-world/ReTurn/issues">open an issue</a> with source identifiers. Please do not upload disputed media or sensitive personal information.</p></div></div><div class="footer-bottom"><a class="brand" href="#">Re<span>Turn</span></a><span>Selective history use across multimodal turns.</span><a href="https://github.com/Link-world/ReTurn">GitHub ↗</a></div></div></footer>
-<script>const tabs=[...document.querySelectorAll('[role="tab"]')];function selectTab(t){tabs.forEach(b=>{const active=b===t;b.setAttribute('aria-selected',active);b.tabIndex=active?0:-1;document.getElementById(b.getAttribute('aria-controls')).hidden=!active;});}tabs.forEach((t,i)=>{t.addEventListener('click',()=>selectTab(t));t.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();const next=e.key==='Home'?0:e.key==='End'?1:1-i;selectTab(tabs[next]);tabs[next].focus();}});});</script></body></html>
+<section id="benchmark"><div class="container"><div class="section-head"><div><span class="eyebrow">03 / Construction &amp; evaluation</span><h2>From verified seeds<br>to matched conversations.</h2></div><p>Each model generates its own historical replies. Paired Single-turn and Multi-turn evaluation measures conversational degradation across Short and Long horizons, using both OpenQA and MCQ.</p></div><figure class="figure construction-figure"><a href="assets/construction.png" aria-label="Open full-size benchmark construction figure"><img src="assets/construction.png" alt="ReTurn construction pipeline: verified seed questions, four paired history conditions, and matched Single-turn and Multi-turn evaluation" loading="lazy"></a><figcaption>7,000 tasks · 3,500 matched pairs · 3,500 visual and 3,500 audio tasks. Dev: 1,500 training + 500 validation tasks. Test: 5,000 tasks.</figcaption></figure></div></section>
+<section class="tint" id="findings"><div class="container"><div class="section-head"><div><span class="eyebrow">04 / What the benchmark reveals</span><h2>Accessing history is only<br>part of the challenge.</h2></div><p>Matched conditions and behavioral probes distinguish access to relevant history from its application and the selection of the intended evidence.</p></div>
+<div class="findings-grid"><figure class="figure"><img src="assets/history_ladders.svg" alt="Two history-use ladders across OpenQA and MCQ"><figcaption>Mean accuracy across 13 model configurations on complete valid operation pairs, pooling Short and Long. Bars overlay accuracies from a shared zero baseline; they do not add. Each model uses its supported modalities. <a href="assets/history_ladders.csv">Plotted values ↗</a></figcaption></figure><div class="ladder-copy"><p class="eyebrow">Two controlled contrasts</p><h3>History access, then conflict resistance.</h3><p><b>Task side.</b> Single-turn → Reconfirm introduces a question carried by history. Reconfirm → Reground changes whether the historical answer remains valid, exposing interference from an outdated answer.</p><p><b>Evidence side.</b> Single-turn → Retrieve requires using historical media. Retrieve → Rebind strengthens competition from current media, testing whether the model selects the intended source.</p><p>These contrasts motivate two diagnostic questions: can a model access the relevant history, and can it bind the request to the right turn?</p></div></div><div class="probe-grid"><div class="finding"><h3><span class="index">01</span>Recall ≠ application</h3><p>Qwen3.8-Omni-Flash recalls the historical question in 99.8% of separate Reground probes, yet achieves 84.1% task accuracy. Restating the question raises accuracy to 96.4%.</p></div><div class="finding"><h3><span class="index">02</span>Competing evidence redirects answers</h3><p>For Qwen3-Omni, matching the replacement-media answer rises from 0.1% to 36.5% after a Rebind media swap, while target accuracy barely changes.</p></div><div class="finding"><h3><span class="index">03</span>Adaptation only partly closes the gap</h3><p>Qwen3-Omni SFT improves Multi-turn accuracy by 3.42 pp on OpenQA and 2.36 pp on MCQ. Long Rebind remains difficult.</p></div></div></div></section>
+<section id="resources"><div class="container"><div class="section-head"><div><span class="eyebrow">05 / Resources</span><h2>Resources</h2></div><p>Read the paper, explore the dataset, or evaluate a model with ReTurn.</p></div><div class="resource-grid resource-links"><div class="resource resource-paper"><div class="resource-title"><div class="resource-symbol"><svg class="resource-icon brand-icon brand-arxiv" aria-hidden="true" viewBox="0 0 448 512" fill="currentColor"><g transform="matrix(1.5499998,0,0,-1.5499998,-123.19936,553.59966)"><path d="m 119.65,351.996 c -5.84961,0.13477 -11.1943,-3.29883 -13.502,-8.67578 -2.19629,-5.27051 -0.61914,-8.9668 4.19727,-15.8652 7.05469,-10.3799 78.8242,-96.5625 78.8242,-96.5625 l -15.8828,-14.8633 c -13.3809,-13.3779 -13.9561,-31.333 -1.50977,-43.7754 l 18.4922,-17.6133 -51.5977,-63.377 c -4.00586,-4.26758 -6.48535,-11.7559 -4.24805,-17.1309 2.27832,-5.53613 7.69727,-9.12891 13.6836,-9.07031 3.83398,0.0957 7.43262,1.87402 9.83789,4.86133 l 61.3691,57.0566 94.5762,-90.0703 c 3.19434,-3.08398 7.44336,-4.83984 11.8828,-4.91016 1.60449,0.0039 3.19824,0.245117 4.73242,0.714844 5.7793,1.80566 10.249,6.41797 11.8711,12.252 1.2998,5.47363 -0.27637,11.2334 -4.18164,15.2832 l -83.0859,100.011996 14.8789,13.834 c 11.0957,10.0029 11.1543,27.3906 0.12695,37.4688 l -16.2949,15.6309 56.2559,66.4434 0.0742,0.0859 0.0664,0.0899 c 5.02734,6.53125 7.43164,11.5615 4.83984,17.9395 -3.13379,5.96875 -8.69727,10.29 -15.2559,11.8516 -0.67676,0.0908 -1.35938,0.13574 -2.04297,0.13671 l -0.004,-0.0117 c -4.42871,-0.27051 -8.61035,-2.13086 -11.7754,-5.24023 l -0.13086,-0.10743 -0.12304,-0.11132 -65.207,-59.127 -89.8965,86.2402 c 0,0 -5.33398,6.47754 -10.9707,6.61133 z m 178.104,-33.041 c 0.47852,-0.002 0.95703,-0.0332 1.43164,-0.0957 4.84277,-1.33301 8.95605,-4.54004 11.4316,-8.91016 1.44922,-3.5625 1.00293,-6.45703 -4.19727,-13.2148 l -56.0586,-66.2188 -26.375,25.3027 64.9551,58.9062 c 2.33887,2.41504 5.46484,3.91113 8.8125,4.2168 v 0.0137 z M 192.436,227.402 334.446,57.244 c 2.78711,-3.48926 4.5293,-6.97949 3.3418,-10.9121 -1.16113,-4.30273 -4.43457,-7.71777 -8.68555,-9.05664 -1.08105,-0.333984 -2.20508,-0.503906 -3.33594,-0.505859 -3.20801,0.07617 -6.26953,1.35645 -8.57617,3.58789 l -142.033,135.284999 c -11.1719,11.1719 -9.48242,26.0195 1.39258,36.8945 z"/></g></svg></div><h3>Paper</h3></div><p class="resource-description">Task design, benchmark results, and behavioral probes of selective history use.</p><div class="resource-actions"><a class="resource-button" href="https://arxiv.org/abs/2610.11948">Read on arXiv <span aria-hidden="true">↗</span></a><div class="resource-note">Latest version</div></div></div><div class="resource resource-dataset"><div class="resource-title"><div class="resource-symbol"><span aria-hidden="true">🤗</span></div><h3>Dataset</h3></div><p class="resource-description">80 preview tasks in 40 matched pairs, with an 8-task quick start and source media.</p><div class="resource-actions"><a class="resource-button" href="https://huggingface.co/datasets/Link-world/ReTurn">Open Hugging Face <span aria-hidden="true">↗</span></a><div class="resource-note">Full dataset coming soon · Access terms apply</div></div></div><div class="resource resource-code"><div class="resource-title"><div class="resource-symbol"><svg fill="currentColor" class="resource-icon brand-icon brand-github" aria-hidden="true" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></div><h3>Code &amp; Evaluation</h3></div><p class="resource-description">Inference adapters for Omni, LVLM, and LALM, paired scoring, and cached examples.</p><div class="resource-actions"><a class="resource-button" href="https://github.com/Link-world/ReTurn">Open GitHub <span aria-hidden="true">↗</span></a><div class="resource-note"><a href="https://github.com/Link-world/ReTurn/blob/main/USAGE.md">Evaluation guide ↗</a></div></div></div></div></div></section></main>
+<footer><div class="container"><div class="footer-grid"><div><h3>License &amp; attribution</h3><p>Original code: <a href="https://github.com/Link-world/ReTurn/blob/main/LICENSE">MIT</a>. Original ReTurn annotations: <a href="https://github.com/Link-world/ReTurn/blob/main/LICENSE-DATA">CC BY 4.0</a>. Third-party media, inherited content, and model outputs are excluded from these grants. FineVideo and LLaVA-Video-178K materials remain subject to upstream terms. See <a href="https://github.com/Link-world/ReTurn/blob/main/THIRD_PARTY_MEDIA.md">media notices and attribution</a>.</p></div><div id="citation"><h3>Citation</h3><p><a href="https://arxiv.org/abs/2610.11948">arXiv:2610.11948</a> · <a href="assets/return.bib" download>Download BibTeX ↓</a></p><pre class="citation-code"><code>@misc{sun2026return,
+  title={When History Helps and Hurts: Selective History Use across Multimodal Turns},
+  author={Shuoyang Sun and Kerui Gu and Hao Fang and Shaoli Huang and Bin Chen},
+  year={2026},
+  eprint={2610.11948},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL},
+  url={https://arxiv.org/abs/2610.11948}
+}</code></pre><p>For questions or copyright concerns, <a href="https://github.com/Link-world/ReTurn/issues">open an issue</a> with source identifiers. Please do not upload disputed media or sensitive personal information.</p></div></div><div class="footer-bottom"><a class="brand" href="#">Re<span>Turn</span></a><span>Selective history use across multimodal turns.</span><a href="https://github.com/Link-world/ReTurn">GitHub ↗</a></div></div></footer>
+<script>const groups=[...document.querySelectorAll('[role="tablist"]')];
+function selectInterface(value){
+ document.querySelectorAll('[data-interface]').forEach(b=>{const active=b.dataset.interface===value;b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1;});
+ ['openqa','mcq'].forEach(v=>document.getElementById('panel-'+v).hidden=v!==value);
+ const label=value==='mcq'?'MCQ':'OpenQA';const path='assets/leaderboard_'+value+'.svg';
+ const img=document.getElementById('leaderboard-chart');img.src=path;img.alt=label+' Single-turn and Multi-turn accuracy by model; Long left, Short right';
+ document.getElementById('chart-download').href=path;
+ document.getElementById('chart-interface-note').textContent=label+' · Long and Short shown separately';
+ document.getElementById('chart-result-label').textContent='Test '+label+' results.';
+}
+groups.forEach(group=>{const tabs=[...group.querySelectorAll('[role="tab"]')];tabs.forEach((tab,i)=>{
+ tab.addEventListener('click',()=>selectInterface(tab.dataset.interface));
+ tab.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();const next=e.key==='Home'?0:e.key==='End'?tabs.length-1:(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;selectInterface(tabs[next].dataset.interface);tabs[next].focus();}});
+});});</script></body></html>

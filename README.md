@@ -2,7 +2,7 @@
 
 **When History Helps and Hurts: Selective History Use across Multimodal Turns**
 
-[🌐 Project Page](https://link-world.github.io/ReTurn/) · [🤗 Dataset Preview](https://huggingface.co/datasets/Link-world/ReTurn) · 📄 Paper (coming soon) · [🏆 Leaderboard](#leaderboard) · [💻 Code & Evaluation](USAGE.md)
+[🌐 Project Page](https://link-world.github.io/ReTurn/) · [📄 Paper](https://arxiv.org/abs/2610.11948) · [💻 Code & Evaluation](USAGE.md) · [🤗 Dataset Preview](https://huggingface.co/datasets/Link-world/ReTurn) · [🏆 Leaderboard](#leaderboard)
 
 ReTurn evaluates **selective history use**: conversational history can supply the question or the evidence needed by a request, while also introducing outdated answers or competing observations.
 
@@ -28,11 +28,11 @@ Retrieve supplies a weaker competitor; it reduces competition without guaranteei
 
 **93.7% → 72.3%:** median model-level OpenQA accuracy from Single-turn to Multi-turn, pooling Short and Long within each model.
 
-Test OpenQA results, with Long on the left and Short on the right. Blue shows Single-turn; coral shows Multi-turn. Signed drops show Acc<sub>multi</sub> − Acc<sub>single</sub> (pp), the negative of the paper’s Δ<sub>conv</sub>. Models are grouped by supported evidence.
+Test OpenQA results, with Long on the left and Short on the right. Blue shows Single-turn; coral shows Multi-turn. Gaps show Δ<sub>conv</sub> = Acc<sub>single</sub> − Acc<sub>multi</sub> (pp), consistent with the tables below. Models are grouped by supported evidence.
 
 [![ReTurn OpenQA leaderboard: paired Single-turn and Multi-turn accuracy in Long and Short conversations, grouped by model family](docs/assets/leaderboard.png)](docs/assets/leaderboard.svg)
 
-[Download scores](docs/assets/leaderboard.csv) · [Full-resolution figure](docs/assets/leaderboard.svg)
+[Switch OpenQA / MCQ on the project page](https://link-world.github.io/ReTurn/#leaderboard) · [Download scores](docs/assets/leaderboard.csv) · [Full-resolution figure](docs/assets/leaderboard.svg)
 
 ### OpenQA results
 
@@ -120,5 +120,15 @@ If you believe a sample infringes your rights, please open a repository issue wi
 
 ## Citation
 
-Citation information will be added when the arXiv record is available.
+```bibtex
+@misc{sun2026return,
+  title={When History Helps and Hurts: Selective History Use across Multimodal Turns},
+  author={Shuoyang Sun and Kerui Gu and Hao Fang and Shaoli Huang and Bin Chen},
+  year={2026},
+  eprint={2610.11948},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL},
+  url={https://arxiv.org/abs/2610.11948}
+}
+```
 

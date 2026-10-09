@@ -2,7 +2,7 @@
 
 **When History Helps and Hurts: Selective History Use across Multimodal Turns**
 
-[🌐 Project Page](https://link-world.github.io/ReTurn/) · [🤗 Dataset Preview](https://huggingface.co/datasets/Link-world/ReTurn) · 📄 Paper (coming soon) · [🏆 Leaderboard](#leaderboard) · [💻 Code & Evaluation](USAGE.md)
+[🌐 Project Page](https://link-world.github.io/ReTurn/) · [📄 Paper](https://arxiv.org/abs/2610.11948) · [💻 Code & Evaluation](../USAGE.md) · [🤗 Dataset Preview](https://huggingface.co/datasets/Link-world/ReTurn) · [🏆 Leaderboard](#leaderboard)
 
 ReTurn evaluates **selective history use**: conversational history can supply the question or the evidence needed by a request, while also introducing outdated answers or competing observations.
 
@@ -10,7 +10,7 @@ ReTurn evaluates **selective history use**: conversational history can supply th
 
 ## Four controlled conditions
 
-![Four controlled conditions: Reconfirm and Reground reuse a historical question with current media; Retrieve and Rebind answer a current question using historical media.](docs/assets/four_conditions.png)
+![Four controlled conditions: Reconfirm and Reground reuse a historical question with current media; Retrieve and Rebind answer a current question using historical media.](assets/four_conditions.png)
 
 Within each pair, the target question, media, and correct answer stay fixed; agreement or competition changes. A matched Single-turn input directly supplies the same target question and media.
 
@@ -19,7 +19,7 @@ Within each pair, the target question, media, and correct answer stay fixed; agr
 
 ### Construction and evaluation pipeline
 
-![Benchmark construction and paired evaluation](docs/assets/construction.png)
+![Benchmark construction and paired evaluation](assets/construction.png)
 
 Retrieve supplies a weaker competitor; it reduces competition without guaranteeing its absence. Each evaluated model generates its own historical replies.
 
@@ -28,11 +28,11 @@ Retrieve supplies a weaker competitor; it reduces competition without guaranteei
 
 **93.7% → 72.3%:** median model-level OpenQA accuracy from Single-turn to Multi-turn, pooling Short and Long within each model.
 
-Test OpenQA results, with Long on the left and Short on the right. Blue shows Single-turn; coral shows Multi-turn. Signed drops show Acc<sub>multi</sub> − Acc<sub>single</sub> (pp), the negative of the paper’s Δ<sub>conv</sub>. Models are grouped by supported evidence.
+Test OpenQA results, with Long on the left and Short on the right. Blue shows Single-turn; coral shows Multi-turn. Gaps show Δ<sub>conv</sub> = Acc<sub>single</sub> − Acc<sub>multi</sub> (pp), consistent with the tables below. Models are grouped by supported evidence.
 
-[![ReTurn OpenQA leaderboard: paired Single-turn and Multi-turn accuracy in Long and Short conversations, grouped by model family](docs/assets/leaderboard.png)](docs/assets/leaderboard.svg)
+[![ReTurn OpenQA leaderboard: paired Single-turn and Multi-turn accuracy in Long and Short conversations, grouped by model family](assets/leaderboard.png)](assets/leaderboard.svg)
 
-[Download scores](docs/assets/leaderboard.csv) · [Full-resolution figure](docs/assets/leaderboard.svg)
+[Switch OpenQA / MCQ on the project page](https://link-world.github.io/ReTurn/#leaderboard) · [Download scores](assets/leaderboard.csv) · [Full-resolution figure](assets/leaderboard.svg)
 
 ### OpenQA results
 
@@ -82,17 +82,17 @@ Short / Long contain 2 / 5 media-bearing user turns, including the final turn. R
 
 In the 13-model averages below, accuracy declines from direct Single-turn input to the reference condition, and further under conflict. The two paths distinguish inheriting a question from selecting historical evidence.
 
-<p align="center"><a href="docs/assets/history_ladders.svg"><img src="docs/assets/history_ladders.png" width="700" alt="Two parallel history-use ladders: three overlaid accuracy bars per row, with task side above evidence side and separate OpenQA and MCQ rows."></a></p>
+<p align="center"><a href="assets/history_ladders.svg"><img src="assets/history_ladders.png" width="700" alt="Two parallel history-use ladders: three overlaid accuracy bars per row, with task side above evidence side and separate OpenQA and MCQ rows."></a></p>
 
 Bars share a zero baseline and **overlay accuracies rather than add them**. Mean accuracy across 13 model configurations on complete valid operation pairs, pooling Short and Long within each model. Single-turn averages the two matched direct counterparts; each model uses its supported evidence modalities.
 
-[Download plotted values](docs/assets/history_ladders.csv) · [Full-resolution figure](docs/assets/history_ladders.svg)
+[Download plotted values](assets/history_ladders.csv) · [Full-resolution figure](assets/history_ladders.svg)
 
 ## How history use fails
 
 **Two illustrative failures.** The left case reuses a historical question with current evidence; the right case asks a current question about historical evidence.
 
-<p align="center"><img src="docs/assets/history_cases.png" width="600" alt="Task preservation and evidence arbitration failure examples"></p>
+<p align="center"><img src="assets/history_cases.png" width="600" alt="Task preservation and evidence arbitration failure examples"></p>
 
 ### What the diagnostics reveal
 
@@ -108,17 +108,27 @@ Illustrations are examples from the paper. Data release will respect source-data
 
 The repository provides **80 Development tasks / 40 complete pairs**, an **8-task quick start**, six inference adapters covering Omni, LVLM and LALM, and cached scoring examples. These preview results are separate from the full-benchmark leaderboard above. The [companion media package](https://huggingface.co/datasets/Link-world/ReTurn) is available on Hugging Face after accepting the upstream terms; new inference requires this package. Cached scoring can be replayed without media or API credentials.
 
-See the [usage guide](USAGE.md) for installation, native-history inference and paired scoring. Sampling and split details are in the [data card](DATA_CARD.md).
+See the [usage guide](../USAGE.md) for installation, native-history inference and paired scoring. Sampling and split details are in the [data card](../DATA_CARD.md).
 
 ## License and Copyright
 
-The original code is released under the [MIT License](LICENSE). Original ReTurn task annotations are released under [CC BY 4.0](LICENSE-DATA).
+The original code is released under the [MIT License](../LICENSE). Original ReTurn task annotations are released under [CC BY 4.0](../LICENSE-DATA).
 
-Copyright in third-party videos and audio remains with the respective rights holders. These media are not covered by ReTurn's code or annotation licenses. Use of FineVideo and LLaVA-Video-178K materials remains subject to their upstream licenses and usage restrictions; see [Third-party media notices](THIRD_PARTY_MEDIA.md) for details and attribution. Inherited third-party content and model outputs are also excluded from ReTurn's license grants.
+Copyright in third-party videos and audio remains with the respective rights holders. These media are not covered by ReTurn's code or annotation licenses. Use of FineVideo and LLaVA-Video-178K materials remains subject to their upstream licenses and usage restrictions; see [Third-party media notices](../THIRD_PARTY_MEDIA.md) for details and attribution. Inherited third-party content and model outputs are also excluded from ReTurn's license grants.
 
 If you believe a sample infringes your rights, please open a repository issue with its source URL or clip ID. We will review the request and promptly remove or correct affected materials where warranted. Please do not upload disputed media or sensitive personal information to a public issue.
 
 ## Citation
 
-Citation information will be added when the arXiv record is available.
+```bibtex
+@misc{sun2026return,
+  title={When History Helps and Hurts: Selective History Use across Multimodal Turns},
+  author={Shuoyang Sun and Kerui Gu and Hao Fang and Shaoli Huang and Bin Chen},
+  year={2026},
+  eprint={2610.11948},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL},
+  url={https://arxiv.org/abs/2610.11948}
+}
+```
 
